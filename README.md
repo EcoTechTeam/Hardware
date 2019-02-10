@@ -12,7 +12,7 @@ Zasady wprowadzania zmian:
 - Gałąź Develop zawiera aktualne projekty
 - Gałęzie feature/Nazwa zawierają tymczasowe jeszcze nie skończone zmiany.
 
-Worflow:
+Workflow:
 - Chcąc dodać zmiany branchujemy z developa.
 - Wznawiając pracę na branchu synchronizujemy się z developem [merge albo rebase].
 - Feature nie musi obejmować całego projektu od początku do końca, może zawierać drobne zmiany w bibliotece czy w którymś z projektów.
