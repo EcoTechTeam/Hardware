@@ -5,4 +5,9 @@ D One Cell Lithium-ion/Polymer Battery Protection IC
 F https://cdn.sparkfun.com/assets/learn_tutorials/2/5/1/DW01-P_DataSheet_V10.pdf
 $ENDCMP
 #
+$CMP FS8205A
+D Dual N-Channel Enhancement Mode Power MOSFET
+F https://www.ic-fortune.com/upload/Download/FS8205A-DS-12_EN.pdf
+$ENDCMP
+#
 #End Doc Library

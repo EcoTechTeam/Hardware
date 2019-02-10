@@ -1,0 +1,716 @@
+EESchema Schematic File Version 4
+LIBS:SafetySupply-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "SafetySupply"
+Date "2019-02-10"
+Rev "1.0"
+Comp "EcoTech Team"
+Comment1 "Układ odpowiedzialny za zabezpieczenie baterii akcesoryjnej i wysterowanie klaksonu."
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5C5F58C2
+P 1450 2150
+F 0 "J?" H 1500 2250 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 1370 2276 50  0001 C CNN
+F 2 "" H 1450 2150 50  0001 C CNN
+F 3 "~" H 1450 2150 50  0001 C CNN
+	1    1450 2150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C5F5A76
+P 3250 2600
+F 0 "R?" H 3320 2646 50  0000 L CNN
+F 1 "1k" H 3320 2555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3180 2600 50  0001 C CNN
+F 3 "~" H 3250 2600 50  0001 C CNN
+	1    3250 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Library:FS8205A U?
+U 1 1 5C5F697A
+P 2700 2950
+F 0 "U?" H 2500 2800 50  0000 C CNN
+F 1 "FS8205A" H 2900 2800 50  0000 C CNN
+F 2 "Package_SO:TSSOP-8_4.4x3mm_P0.65mm" H 2500 2700 50  0001 C CNN
+F 3 "https://www.ic-fortune.com/upload/Download/FS8205A-DS-12_EN.pdf" H 2500 2700 50  0001 C CNN
+	1    2700 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C5F6C9F
+P 1850 2150
+F 0 "R?" V 1643 2150 50  0000 C CNN
+F 1 "100" V 1734 2150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1780 2150 50  0001 C CNN
+F 3 "~" H 1850 2150 50  0001 C CNN
+	1    1850 2150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 2150 2050 2150
+$Comp
+L Device:C C?
+U 1 1 5C5F6EC8
+P 2050 2300
+F 0 "C?" H 1750 2350 50  0000 L CNN
+F 1 "100n" H 1750 2250 50  0000 L CNN
+F 2 "" H 2088 2150 50  0001 C CNN
+F 3 "~" H 2050 2300 50  0001 C CNN
+	1    2050 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 2450 2050 2450
+$Comp
+L power:+12V #PWR?
+U 1 1 5C5F7175
+P 3150 1700
+F 0 "#PWR?" H 3150 1550 50  0001 C CNN
+F 1 "+12V" H 3165 1873 50  0000 C CNN
+F 2 "" H 3150 1700 50  0001 C CNN
+F 3 "" H 3150 1700 50  0001 C CNN
+	1    3150 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 2250 1650 2450
+Wire Wire Line
+	2050 2450 1650 2450
+Connection ~ 2050 2450
+Connection ~ 1650 2450
+Wire Wire Line
+	1650 2150 1700 2150
+$Comp
+L power:+12V #PWR?
+U 1 1 5C6049A1
+P 4450 3200
+F 0 "#PWR?" H 4450 3050 50  0001 C CNN
+F 1 "+12V" H 4465 3373 50  0000 C CNN
+F 2 "" H 4450 3200 50  0001 C CNN
+F 3 "" H 4450 3200 50  0001 C CNN
+	1    4450 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C605EC8
+P 4450 4100
+F 0 "#PWR?" H 4450 3850 50  0001 C CNN
+F 1 "GND" H 4455 3927 50  0000 C CNN
+F 2 "" H 4450 4100 50  0001 C CNN
+F 3 "" H 4450 4100 50  0001 C CNN
+	1    4450 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 4100 4450 3950
+$Comp
+L Device:R R?
+U 1 1 5C607484
+P 4450 3500
+F 0 "R?" H 4520 3546 50  0000 L CNN
+F 1 "2k" H 4520 3455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4380 3500 50  0001 C CNN
+F 3 "~" H 4450 3500 50  0001 C CNN
+	1    4450 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3200 4450 3350
+$Comp
+L Device:LED D?
+U 1 1 5C60CC3E
+P 4450 3800
+F 0 "D?" V 4488 3683 50  0000 R CNN
+F 1 "LED" V 4397 3683 50  0000 R CNN
+F 2 "Diode_SMD:D_0805_2012Metric" H 4450 3800 50  0001 C CNN
+F 3 "~" H 4450 3800 50  0001 C CNN
+	1    4450 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5C6116CB
+P 8450 1750
+F 0 "J?" H 8400 1850 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 8370 1876 50  0001 C CNN
+F 2 "" H 8450 1750 50  0001 C CNN
+F 3 "~" H 8450 1750 50  0001 C CNN
+	1    8450 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay:DIPxx-1Axx-11x K?
+U 1 1 5C612DF0
+P 6650 1950
+F 0 "K?" V 7000 2150 50  0000 C CNN
+F 1 "DIPxx-1Axx-11x" V 7026 1950 50  0001 C CNN
+F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 7000 1900 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 6650 1950 50  0001 C CNN
+	1    6650 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C61B126
+P 8250 2050
+F 0 "#PWR?" H 8250 1800 50  0001 C CNN
+F 1 "GND" H 8255 1877 50  0000 C CNN
+F 2 "" H 8250 2050 50  0001 C CNN
+F 3 "" H 8250 2050 50  0001 C CNN
+	1    8250 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5C61F508
+P 6150 1600
+F 0 "#PWR?" H 6150 1450 50  0001 C CNN
+F 1 "+12V" H 6165 1773 50  0000 C CNN
+F 2 "" H 6150 1600 50  0001 C CNN
+F 3 "" H 6150 1600 50  0001 C CNN
+	1    6150 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 1600 6150 1750
+Wire Wire Line
+	6150 1750 6350 1750
+Wire Wire Line
+	6150 2150 6350 2150
+Connection ~ 6150 1750
+$Comp
+L pspice:DIODE D?
+U 1 1 5C623BB2
+P 6650 2550
+F 0 "D?" H 6700 2750 50  0000 C CNN
+F 1 "DIODE" H 6650 2724 50  0001 C CNN
+F 2 "" H 6650 2550 50  0001 C CNN
+F 3 "~" H 6650 2550 50  0001 C CNN
+	1    6650 2550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6450 2550 6150 2550
+Wire Wire Line
+	6150 2550 6150 2150
+Connection ~ 6150 2150
+Wire Wire Line
+	6850 2550 7050 2550
+Wire Wire Line
+	7050 2550 7050 2150
+Wire Wire Line
+	7050 2150 6950 2150
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5C62715E
+P 7250 2550
+F 0 "J?" H 7200 2650 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 7170 2676 50  0001 C CNN
+F 2 "" H 7250 2550 50  0001 C CNN
+F 3 "~" H 7250 2550 50  0001 C CNN
+	1    7250 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C627165
+P 7050 2650
+F 0 "#PWR?" H 7050 2400 50  0001 C CNN
+F 1 "GND" H 7055 2477 50  0000 C CNN
+F 2 "" H 7050 2650 50  0001 C CNN
+F 3 "" H 7050 2650 50  0001 C CNN
+	1    7050 2650
+	1    0    0    -1  
+$EndComp
+Connection ~ 7050 2550
+Text Notes 8600 1850 0    50   ~ 0
+Złącze na klakson
+Text Notes 7400 2650 0    50   ~ 0
+Złącze na przycisk klaksonu
+Wire Wire Line
+	6150 1750 6150 2150
+$Comp
+L Library:DW01-P U?
+U 1 1 5C5F55A8
+P 2700 2300
+F 0 "U?" H 2400 2600 50  0000 C CNN
+F 1 "DW01-P" H 3000 2600 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 2450 2600 50  0001 C CNN
+F 3 "https://cdn.sparkfun.com/assets/learn_tutorials/2/5/1/DW01-P_DataSheet_V10.pdf" H 2450 2600 50  0001 C CNN
+	1    2700 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 2150 2250 2150
+Connection ~ 2050 2150
+Wire Wire Line
+	3250 2750 3250 2850
+Wire Wire Line
+	3250 2850 3150 2850
+Wire Wire Line
+	3150 2950 3150 2850
+Connection ~ 3150 2850
+Wire Wire Line
+	2350 2850 2350 2950
+Wire Wire Line
+	2350 2850 1650 2850
+Wire Wire Line
+	1650 2450 1650 2850
+Connection ~ 2350 2850
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5C643360
+P 1450 3500
+F 0 "J?" H 1500 3600 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 1370 3626 50  0001 C CNN
+F 2 "" H 1450 3500 50  0001 C CNN
+F 3 "~" H 1450 3500 50  0001 C CNN
+	1    1450 3500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C643367
+P 3250 3950
+F 0 "R?" H 3320 3996 50  0000 L CNN
+F 1 "1k" H 3320 3905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3180 3950 50  0001 C CNN
+F 3 "~" H 3250 3950 50  0001 C CNN
+	1    3250 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Library:FS8205A U?
+U 1 1 5C64336E
+P 2700 4300
+F 0 "U?" H 2500 4150 50  0000 C CNN
+F 1 "FS8205A" H 2900 4150 50  0000 C CNN
+F 2 "Package_SO:TSSOP-8_4.4x3mm_P0.65mm" H 2500 4050 50  0001 C CNN
+F 3 "https://www.ic-fortune.com/upload/Download/FS8205A-DS-12_EN.pdf" H 2500 4050 50  0001 C CNN
+	1    2700 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C643375
+P 1850 3500
+F 0 "R?" V 1643 3500 50  0000 C CNN
+F 1 "100" V 1734 3500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1780 3500 50  0001 C CNN
+F 3 "~" H 1850 3500 50  0001 C CNN
+	1    1850 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 3500 2050 3500
+$Comp
+L Device:C C?
+U 1 1 5C64337D
+P 2050 3650
+F 0 "C?" H 1750 3700 50  0000 L CNN
+F 1 "100n" H 1750 3600 50  0000 L CNN
+F 2 "" H 2088 3500 50  0001 C CNN
+F 3 "~" H 2050 3650 50  0001 C CNN
+	1    2050 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 3800 2050 3800
+Wire Wire Line
+	1650 3600 1650 3800
+Wire Wire Line
+	2050 3800 1650 3800
+Connection ~ 2050 3800
+Connection ~ 1650 3800
+$Comp
+L Library:DW01-P U?
+U 1 1 5C643394
+P 2700 3650
+F 0 "U?" H 2400 3950 50  0000 C CNN
+F 1 "DW01-P" H 3000 3950 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 2450 3950 50  0001 C CNN
+F 3 "https://cdn.sparkfun.com/assets/learn_tutorials/2/5/1/DW01-P_DataSheet_V10.pdf" H 2450 3950 50  0001 C CNN
+	1    2700 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 3500 2250 3500
+Connection ~ 2050 3500
+Wire Wire Line
+	3250 4100 3250 4200
+Wire Wire Line
+	3250 4200 3150 4200
+Wire Wire Line
+	3150 4300 3150 4200
+Connection ~ 3150 4200
+Wire Wire Line
+	2350 4200 2350 4300
+Wire Wire Line
+	2350 4200 1650 4200
+Wire Wire Line
+	1650 3800 1650 4200
+Connection ~ 2350 4200
+Wire Wire Line
+	3250 2850 3250 3250
+Wire Wire Line
+	3250 3250 1650 3250
+Wire Wire Line
+	1650 3250 1650 3500
+Connection ~ 3250 2850
+Wire Wire Line
+	1650 3500 1700 3500
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5C64597B
+P 1450 4850
+F 0 "J?" H 1500 4950 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 1370 4976 50  0001 C CNN
+F 2 "" H 1450 4850 50  0001 C CNN
+F 3 "~" H 1450 4850 50  0001 C CNN
+	1    1450 4850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C645982
+P 3250 5300
+F 0 "R?" H 3320 5346 50  0000 L CNN
+F 1 "1k" H 3320 5255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3180 5300 50  0001 C CNN
+F 3 "~" H 3250 5300 50  0001 C CNN
+	1    3250 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Library:FS8205A U?
+U 1 1 5C645989
+P 2700 5650
+F 0 "U?" H 2500 5500 50  0000 C CNN
+F 1 "FS8205A" H 2900 5500 50  0000 C CNN
+F 2 "Package_SO:TSSOP-8_4.4x3mm_P0.65mm" H 2500 5400 50  0001 C CNN
+F 3 "https://www.ic-fortune.com/upload/Download/FS8205A-DS-12_EN.pdf" H 2500 5400 50  0001 C CNN
+	1    2700 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C645990
+P 1850 4850
+F 0 "R?" V 1643 4850 50  0000 C CNN
+F 1 "100" V 1734 4850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1780 4850 50  0001 C CNN
+F 3 "~" H 1850 4850 50  0001 C CNN
+	1    1850 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 4850 2050 4850
+$Comp
+L Device:C C?
+U 1 1 5C645998
+P 2050 5000
+F 0 "C?" H 1750 5050 50  0000 L CNN
+F 1 "100n" H 1750 4950 50  0000 L CNN
+F 2 "" H 2088 4850 50  0001 C CNN
+F 3 "~" H 2050 5000 50  0001 C CNN
+	1    2050 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 5150 2050 5150
+Wire Wire Line
+	1650 4950 1650 5150
+Wire Wire Line
+	2050 5150 1650 5150
+Connection ~ 2050 5150
+Connection ~ 1650 5150
+$Comp
+L Library:DW01-P U?
+U 1 1 5C6459A5
+P 2700 5000
+F 0 "U?" H 2400 5300 50  0000 C CNN
+F 1 "DW01-P" H 3000 5300 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 2450 5300 50  0001 C CNN
+F 3 "https://cdn.sparkfun.com/assets/learn_tutorials/2/5/1/DW01-P_DataSheet_V10.pdf" H 2450 5300 50  0001 C CNN
+	1    2700 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 4850 2250 4850
+Connection ~ 2050 4850
+Wire Wire Line
+	3250 5450 3250 5550
+Wire Wire Line
+	3250 5550 3150 5550
+Wire Wire Line
+	3150 5650 3150 5550
+Connection ~ 3150 5550
+Wire Wire Line
+	2350 5550 2350 5650
+Wire Wire Line
+	2350 5550 1650 5550
+Wire Wire Line
+	1650 5150 1650 5550
+Connection ~ 2350 5550
+Wire Wire Line
+	3250 4600 1650 4600
+Wire Wire Line
+	1650 4600 1650 4850
+Wire Wire Line
+	1650 4850 1700 4850
+Wire Wire Line
+	3250 4600 3250 4200
+Connection ~ 3250 4200
+Connection ~ 1650 2150
+Connection ~ 1650 3500
+Connection ~ 1650 4850
+$Comp
+L power:GND #PWR?
+U 1 1 5C64DF68
+P 3250 5700
+F 0 "#PWR?" H 3250 5450 50  0001 C CNN
+F 1 "GND" H 3255 5527 50  0000 C CNN
+F 2 "" H 3250 5700 50  0001 C CNN
+F 3 "" H 3250 5700 50  0001 C CNN
+	1    3250 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 5700 3250 5550
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 5C650F11
+P 2750 1800
+F 0 "SW?" H 2750 1943 50  0000 C CNN
+F 1 "SW_SPST" H 2750 1944 50  0001 C CNN
+F 2 "" H 2750 1800 50  0001 C CNN
+F 3 "" H 2750 1800 50  0001 C CNN
+	1    2750 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 1700 3150 1800
+Wire Wire Line
+	3150 1800 2950 1800
+Wire Wire Line
+	1650 1800 1650 2150
+Text Notes 2450 1450 0    50   ~ 0
+Włącznik zasilania
+Text Notes 1050 4000 1    50   ~ 0
+Złącze na baterie
+Text Notes 3700 3750 1    50   ~ 0
+BMS
+Text Notes 4250 3900 1    50   ~ 0
+Dioda LED
+Text Notes 6350 1500 0    50   ~ 0
+Przekaźnik klaksonu
+$Comp
+L Device:Fuse F?
+U 1 1 5C65D5E9
+P 2150 1800
+F 0 "F?" V 1953 1800 50  0000 C CNN
+F 1 "Fuse" V 2044 1800 50  0000 C CNN
+F 2 "" V 2080 1800 50  0001 C CNN
+F 3 "~" H 2150 1800 50  0001 C CNN
+	1    2150 1800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 1800 1650 1800
+Wire Wire Line
+	2550 1800 2300 1800
+Text Notes 1900 1450 0    50   ~ 0
+Bezpiecznik
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5C65FD6B
+P 6750 3900
+F 0 "J?" H 6700 4000 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 6670 4026 50  0001 C CNN
+F 2 "" H 6750 3900 50  0001 C CNN
+F 3 "~" H 6750 3900 50  0001 C CNN
+	1    6750 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C65FD72
+P 6550 4000
+F 0 "#PWR?" H 6550 3750 50  0001 C CNN
+F 1 "GND" H 6555 3827 50  0000 C CNN
+F 2 "" H 6550 4000 50  0001 C CNN
+F 3 "" H 6550 4000 50  0001 C CNN
+	1    6550 4000
+	1    0    0    -1  
+$EndComp
+Text Notes 6900 4000 0    50   ~ 0
+Wyjście napięcia baterii
+$Comp
+L power:+12V #PWR?
+U 1 1 5C660F53
+P 6550 3900
+F 0 "#PWR?" H 6550 3750 50  0001 C CNN
+F 1 "+12V" H 6565 4073 50  0000 C CNN
+F 2 "" H 6550 3900 50  0001 C CNN
+F 3 "" H 6550 3900 50  0001 C CNN
+	1    6550 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5C664AD5
+P 3850 1750
+F 0 "#PWR?" H 3850 1600 50  0001 C CNN
+F 1 "+12V" H 3865 1923 50  0000 C CNN
+F 2 "" H 3850 1750 50  0001 C CNN
+F 3 "" H 3850 1750 50  0001 C CNN
+	1    3850 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C664B16
+P 3850 2050
+F 0 "#PWR?" H 3850 1800 50  0001 C CNN
+F 1 "GND" H 3855 1877 50  0000 C CNN
+F 2 "" H 3850 2050 50  0001 C CNN
+F 3 "" H 3850 2050 50  0001 C CNN
+	1    3850 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5C664BB9
+P 3850 1900
+F 0 "C?" H 3968 1946 50  0000 L CNN
+F 1 "100u" H 3968 1855 50  0000 L CNN
+F 2 "" H 3888 1750 50  0001 C CNN
+F 3 "~" H 3850 1900 50  0001 C CNN
+	1    3850 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C665EC7
+P 4300 1900
+F 0 "C?" H 4415 1946 50  0000 L CNN
+F 1 "100n" H 4415 1855 50  0000 L CNN
+F 2 "" H 4338 1750 50  0001 C CNN
+F 3 "~" H 4300 1900 50  0001 C CNN
+	1    4300 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 1750 4300 1750
+Connection ~ 3850 1750
+Wire Wire Line
+	3850 2050 4300 2050
+Connection ~ 3850 2050
+$Comp
+L Device:Varistor RV?
+U 1 1 5C66947E
+P 4750 1900
+F 0 "RV?" H 4853 1946 50  0000 L CNN
+F 1 "18V" H 4853 1855 50  0000 L CNN
+F 2 "" V 4680 1900 50  0001 C CNN
+F 3 "~" H 4750 1900 50  0001 C CNN
+	1    4750 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_TVS_ALT D?
+U 1 1 5C6695A1
+P 5050 1900
+F 0 "D?" V 5050 1979 50  0000 L CNN
+F 1 "D_TVS_ALT" V 5095 1979 50  0001 L CNN
+F 2 "" H 5050 1900 50  0001 C CNN
+F 3 "~" H 5050 1900 50  0001 C CNN
+	1    5050 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4300 2050 4750 2050
+Connection ~ 4300 2050
+Connection ~ 4750 2050
+Wire Wire Line
+	4750 2050 5050 2050
+Wire Wire Line
+	4300 1750 4750 1750
+Connection ~ 4300 1750
+Connection ~ 4750 1750
+Wire Wire Line
+	4750 1750 5050 1750
+$Comp
+L Device:C C?
+U 1 1 5C66ED15
+P 7200 1900
+F 0 "C?" H 7315 1946 50  0000 L CNN
+F 1 "100n" H 7315 1855 50  0000 L CNN
+F 2 "" H 7238 1750 50  0001 C CNN
+F 3 "~" H 7200 1900 50  0001 C CNN
+	1    7200 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Varistor RV?
+U 1 1 5C66ED1E
+P 7650 1900
+F 0 "RV?" H 7753 1946 50  0000 L CNN
+F 1 "18V" H 7753 1855 50  0000 L CNN
+F 2 "" V 7580 1900 50  0001 C CNN
+F 3 "~" H 7650 1900 50  0001 C CNN
+	1    7650 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_TVS_ALT D?
+U 1 1 5C66ED25
+P 7950 1900
+F 0 "D?" V 7950 1979 50  0000 L CNN
+F 1 "D_TVS_ALT" V 7995 1979 50  0001 L CNN
+F 2 "" H 7950 1900 50  0001 C CNN
+F 3 "~" H 7950 1900 50  0001 C CNN
+	1    7950 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7200 2050 7650 2050
+Connection ~ 7650 2050
+Wire Wire Line
+	7650 2050 7950 2050
+Wire Wire Line
+	7200 1750 7650 1750
+Connection ~ 7200 1750
+Connection ~ 7650 1750
+Wire Wire Line
+	7650 1750 7950 1750
+Wire Wire Line
+	6950 1750 7200 1750
+Wire Wire Line
+	8250 2050 8250 1850
+Wire Wire Line
+	8250 2050 7950 2050
+Connection ~ 8250 2050
+Connection ~ 7950 2050
+Connection ~ 7950 1750
+Wire Wire Line
+	7950 1750 8250 1750
+Connection ~ 3250 5550
+Text Notes 3950 1450 0    50   ~ 0
+Zabezpieczenia napięcia baterii
+Text Notes 7300 1500 0    50   ~ 0
+Dodatkowe zabezpieczenia klaksonu
+$EndSCHEMATC
