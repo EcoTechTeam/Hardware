@@ -10,4 +10,10 @@ D Dual N-Channel Enhancement Mode Power MOSFET
 F https://www.ic-fortune.com/upload/Download/FS8205A-DS-12_EN.pdf
 $ENDCMP
 #
+$CMP MQ-8
+D Hydrogen sensor
+K H2
+F https://dlnmh9ip6v2uc.cloudfront.net/datasheets/Sensors/Biometric/MQ-8.pdf
+$ENDCMP
+#
 #End Doc Library
