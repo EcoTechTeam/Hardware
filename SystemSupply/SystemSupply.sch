@@ -1,0 +1,327 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "SystemSupply"
+Date ""
+Rev "1.0"
+Comp "EcoTech Team"
+Comment1 "Układ odpowiedzialny za zabezpieczenie ogniwa i zasilenia magistrali"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 5C71CE75
+P 1650 2150
+F 0 "#PWR?" H 1650 1950 50  0001 C CNN
+F 1 "GNDPWR" H 1654 1996 50  0000 C CNN
+F 2 "" H 1650 2100 50  0001 C CNN
+F 3 "" H 1650 2100 50  0001 C CNN
+	1    1650 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 2050 1650 2050
+Wire Wire Line
+	1650 2050 1650 2150
+$Comp
+L Device:Fuse F?
+U 1 1 5C71CF25
+P 1900 1600
+F 0 "F?" V 1703 1600 50  0000 C CNN
+F 1 "20A" V 1794 1600 50  0000 C CNN
+F 2 "" V 1830 1600 50  0001 C CNN
+F 3 "" H 1900 1600 50  0001 C CNN
+	1    1900 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1750 1600 1550 1600
+$Comp
+L Relay:RM50-xx21 K?
+U 1 1 5C71D327
+P 2500 1900
+F 0 "K?" V 3067 1900 50  0000 C CNN
+F 1 "RM50-xx21" V 2976 1900 50  0000 C CNN
+F 2 "Relay_THT:Relay_SPST_Finder_32.21-x300" H 3770 1870 50  0001 C CNN
+F 3 "" H 2500 1900 50  0001 C CNN
+	1    2500 1900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2200 1600 2050 1600
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5C71D446
+P 3000 2400
+F 0 "J?" H 2919 2167 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 2920 2166 50  0001 C CNN
+F 2 "" H 3000 2400 50  0001 C CNN
+F 3 "" H 3000 2400 50  0001 C CNN
+	1    3000 2400
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2200 2400 2800 2400
+Wire Wire Line
+	2800 2100 2800 2300
+Wire Wire Line
+	2200 2100 2200 2400
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5C71DDC0
+P 4100 1800
+F 0 "Q?" V 4350 1800 50  0000 C CNN
+F 1 "Q_NMOS_GDS" V 4352 1800 50  0001 C CNN
+F 2 "" H 4300 1900 50  0001 C CNN
+F 3 "" H 4100 1800 50  0001 C CNN
+	1    4100 1800
+	0    1    -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 5C71DFB1
+P 5300 2050
+F 0 "J?" H 5300 2150 50  0000 C CNN
+F 1 "Conn_01x01" H 5220 2176 50  0001 C CNN
+F 2 "" H 5300 2050 50  0001 C CNN
+F 3 "" H 5300 2050 50  0001 C CNN
+	1    5300 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 5C71DFB8
+P 5000 2150
+F 0 "#PWR?" H 5000 1950 50  0001 C CNN
+F 1 "GNDPWR" H 5004 1996 50  0000 C CNN
+F 2 "" H 5000 2100 50  0001 C CNN
+F 3 "" H 5000 2100 50  0001 C CNN
+	1    5000 2150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 2050 5000 2050
+Wire Wire Line
+	5000 2050 5000 2150
+Wire Wire Line
+	5100 1700 5000 1700
+$Comp
+L power:+24V #PWR?
+U 1 1 5C71E1E0
+P 5000 1700
+F 0 "#PWR?" H 5000 1550 50  0001 C CNN
+F 1 "+24V" H 5015 1873 50  0000 C CNN
+F 2 "" H 5000 1700 50  0001 C CNN
+F 3 "" H 5000 1700 50  0001 C CNN
+	1    5000 1700
+	1    0    0    -1  
+$EndComp
+Connection ~ 5000 1700
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 5C71E204
+P 1500 4150
+F 0 "#PWR?" H 1500 3950 50  0001 C CNN
+F 1 "GNDPWR" H 1504 3996 50  0000 C CNN
+F 2 "" H 1500 4100 50  0001 C CNN
+F 3 "" H 1500 4100 50  0001 C CNN
+	1    1500 4150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Net-Tie_2 NT?
+U 1 1 5C71E33C
+P 1700 4150
+F 0 "NT?" H 1700 4236 50  0000 C CNN
+F 1 "Net-Tie_2" H 1700 4237 50  0001 C CNN
+F 2 "" H 1700 4150 50  0001 C CNN
+F 3 "" H 1700 4150 50  0001 C CNN
+	1    1700 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 4150 1500 4150
+$Comp
+L power:GND #PWR?
+U 1 1 5C71E4C7
+P 1950 4150
+F 0 "#PWR?" H 1950 3900 50  0001 C CNN
+F 1 "GND" H 1955 3977 50  0000 C CNN
+F 2 "" H 1950 4150 50  0001 C CNN
+F 3 "" H 1950 4150 50  0001 C CNN
+	1    1950 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 4150 1950 4150
+Wire Wire Line
+	4300 1700 4500 1700
+$Comp
+L Library:LM5050 U?
+U 1 1 5C72A92D
+P 4100 2300
+F 0 "U?" H 3700 2600 50  0000 L CNN
+F 1 "LM5050" H 4150 2050 50  0000 L CNN
+F 2 "" H 4100 2550 50  0001 C CNN
+F 3 "" H 4100 2550 50  0001 C CNN
+	1    4100 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 2000 4300 1700
+Connection ~ 4300 1700
+Wire Wire Line
+	3900 2000 3900 1700
+Connection ~ 3900 1700
+$Comp
+L Device:R R?
+U 1 1 5C72B0BF
+P 4500 2000
+F 0 "R?" H 4570 2046 50  0000 L CNN
+F 1 "100" H 4570 1955 50  0000 L CNN
+F 2 "" V 4430 2000 50  0001 C CNN
+F 3 "" H 4500 2000 50  0001 C CNN
+	1    4500 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 1850 4500 1700
+Connection ~ 4500 1700
+Wire Wire Line
+	4500 1700 5000 1700
+Wire Wire Line
+	4500 2150 4500 2300
+$Comp
+L Device:C C?
+U 1 1 5C72B398
+P 4500 2450
+F 0 "C?" H 4615 2496 50  0000 L CNN
+F 1 "100n" H 4615 2405 50  0000 L CNN
+F 2 "" H 4538 2300 50  0001 C CNN
+F 3 "" H 4500 2450 50  0001 C CNN
+	1    4500 2450
+	1    0    0    -1  
+$EndComp
+Connection ~ 4500 2300
+$Comp
+L Device:R R?
+U 1 1 5C72BA8A
+P 3700 2450
+F 0 "R?" H 3630 2404 50  0000 R CNN
+F 1 "10k" H 3630 2495 50  0000 R CNN
+F 2 "" V 3630 2450 50  0001 C CNN
+F 3 "" H 3700 2450 50  0001 C CNN
+	1    3700 2450
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:D_TVS_ALT D?
+U 1 1 5C72C848
+P 3350 1850
+F 0 "D?" V 3350 1929 50  0000 L CNN
+F 1 "D_TVS_ALT" V 3395 1929 50  0001 L CNN
+F 2 "" H 3350 1850 50  0001 C CNN
+F 3 "" H 3350 1850 50  0001 C CNN
+	1    3350 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 5C72D05F
+P 4500 2600
+F 0 "#PWR?" H 4500 2400 50  0001 C CNN
+F 1 "GNDPWR" H 4504 2446 50  0000 C CNN
+F 2 "" H 4500 2550 50  0001 C CNN
+F 3 "" H 4500 2550 50  0001 C CNN
+	1    4500 2600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 5C72D0A7
+P 4100 2600
+F 0 "#PWR?" H 4100 2400 50  0001 C CNN
+F 1 "GNDPWR" H 4104 2446 50  0000 C CNN
+F 2 "" H 4100 2550 50  0001 C CNN
+F 3 "" H 4100 2550 50  0001 C CNN
+	1    4100 2600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 5C72D0CE
+P 3700 2600
+F 0 "#PWR?" H 3700 2400 50  0001 C CNN
+F 1 "GNDPWR" H 3704 2446 50  0000 C CNN
+F 2 "" H 3700 2550 50  0001 C CNN
+F 3 "" H 3700 2550 50  0001 C CNN
+	1    3700 2600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 5C72D129
+P 3350 2000
+F 0 "#PWR?" H 3350 1800 50  0001 C CNN
+F 1 "GNDPWR" H 3354 1846 50  0000 C CNN
+F 2 "" H 3350 1950 50  0001 C CNN
+F 3 "" H 3350 1950 50  0001 C CNN
+	1    3350 2000
+	-1   0    0    -1  
+$EndComp
+Connection ~ 3350 1700
+Wire Wire Line
+	3350 1700 3900 1700
+Wire Wire Line
+	2800 1700 3350 1700
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 5C72DB1E
+P 5300 1700
+F 0 "J?" H 5300 1800 50  0000 C CNN
+F 1 "Conn_01x01" H 5220 1826 50  0001 C CNN
+F 2 "" H 5300 1700 50  0001 C CNN
+F 3 "" H 5300 1700 50  0001 C CNN
+	1    5300 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 5C72DB75
+P 1350 1600
+F 0 "J?" H 1350 1700 50  0000 C CNN
+F 1 "Conn_01x01" H 1270 1726 50  0001 C CNN
+F 2 "" H 1350 1600 50  0001 C CNN
+F 3 "" H 1350 1600 50  0001 C CNN
+	1    1350 1600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 5C72DD90
+P 1350 2050
+F 0 "J?" H 1350 2150 50  0000 C CNN
+F 1 "Conn_01x01" H 1270 2176 50  0001 C CNN
+F 2 "" H 1350 2050 50  0001 C CNN
+F 3 "" H 1350 2050 50  0001 C CNN
+	1    1350 2050
+	-1   0    0    -1  
+$EndComp
+Text Notes 1650 1350 0    50   ~ 0
+Bezpiecznik
+Text Notes 2200 1200 0    50   ~ 0
+Przekaźnik ogniwa
+Text Notes 3850 1450 0    50   ~ 0
+Dioda ogniwa
+Text Notes 1150 2150 1    50   ~ 0
+Złącze wejściowe
+Text Notes 5550 2200 1    50   ~ 0
+Złącze wyjściowe
+Text Notes 2100 2600 0    50   ~ 0
+Złącze przekaźnika ogniwa
+$EndSCHEMATC
