@@ -1,5 +1,10 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP AXA01B18-L
+D DC DC 20W Power converter
+F https://www.artesyn.com/power/assets/axa20w_02jul2015_183fdc184d.pdf
+$ENDCMP
+#
 $CMP DW01-P
 D One Cell Lithium-ion/Polymer Battery Protection IC
 F https://cdn.sparkfun.com/assets/learn_tutorials/2/5/1/DW01-P_DataSheet_V10.pdf
