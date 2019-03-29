@@ -58,17 +58,15 @@ F 3 "~" H 2950 2050 50  0001 C CNN
 	1    2950 2050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3150 2200 2950 2200
 $Comp
 L power:+12V #PWR0101
 U 1 1 5C5F7175
-P 4200 1350
-F 0 "#PWR0101" H 4200 1200 50  0001 C CNN
-F 1 "+12V" H 4215 1523 50  0000 C CNN
-F 2 "" H 4200 1350 50  0001 C CNN
-F 3 "" H 4200 1350 50  0001 C CNN
-	1    4200 1350
+P 4200 1300
+F 0 "#PWR0101" H 4200 1150 50  0001 C CNN
+F 1 "+12V" H 4215 1473 50  0000 C CNN
+F 2 "" H 4200 1300 50  0001 C CNN
+F 3 "" H 4200 1300 50  0001 C CNN
+	1    4200 1300
 	1    0    0    -1  
 $EndComp
 Connection ~ 2950 2200
@@ -123,12 +121,12 @@ $EndComp
 $Comp
 L power:GND #PWR0104
 U 1 1 5C61B126
-P 9500 1850
-F 0 "#PWR0104" H 9500 1600 50  0001 C CNN
-F 1 "GND" H 9505 1677 50  0000 C CNN
-F 2 "" H 9500 1850 50  0001 C CNN
-F 3 "" H 9500 1850 50  0001 C CNN
-	1    9500 1850
+P 8500 1850
+F 0 "#PWR0104" H 8500 1600 50  0001 C CNN
+F 1 "GND" H 8505 1677 50  0000 C CNN
+F 2 "" H 8500 1850 50  0001 C CNN
+F 3 "" H 8500 1850 50  0001 C CNN
+	1    8500 1850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -197,8 +195,6 @@ F 3 "https://cdn.sparkfun.com/assets/learn_tutorials/2/5/1/DW01-P_DataSheet_V10.
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2950 1900 3150 1900
-Wire Wire Line
 	4150 2500 4150 2600
 Wire Wire Line
 	4150 2600 4050 2600
@@ -208,19 +204,8 @@ Wire Wire Line
 	3250 2600 2950 2600
 Wire Wire Line
 	2950 2200 2950 2600
-$Comp
-L Switch:SW_SPST SW1
-U 1 1 5C650F11
-P 3800 1400
-F 0 "SW1" H 3800 1543 50  0000 C CNN
-F 1 "SW_SPST" H 3800 1544 50  0001 C CNN
-F 2 "" H 3800 1400 50  0001 C CNN
-F 3 "" H 3800 1400 50  0001 C CNN
-	1    3800 1400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	4200 1400 4000 1400
+	4200 1300 4000 1300
 Text Notes 3600 1100 0    50   ~ 0
 Włącznik zasilania
 Text Notes 4700 3600 1    50   ~ 0
@@ -235,7 +220,7 @@ U 1 1 5C65D5E9
 P 3200 1400
 F 0 "F1" V 3003 1400 50  0000 C CNN
 F 1 "Fuse" V 3094 1400 50  0000 C CNN
-F 2 "Footprints:Fuse_Blade" V 3130 1400 50  0001 C CNN
+F 2 "Footprints:Fuse_Blade_90" V 3130 1400 50  0001 C CNN
 F 3 "~" H 3200 1400 50  0001 C CNN
 	1    3200 1400
 	0    1    1    0   
@@ -358,7 +343,6 @@ Wire Wire Line
 	8250 1550 8500 1550
 Wire Wire Line
 	9500 1850 9500 1650
-Connection ~ 9500 1850
 Connection ~ 8950 1850
 Connection ~ 8950 1550
 Text Notes 5250 1250 0    50   ~ 0
@@ -398,11 +382,7 @@ Wire Wire Line
 	9200 1550 9500 1550
 Connection ~ 9200 1850
 Wire Wire Line
-	9200 1850 9500 1850
-Wire Wire Line
 	7450 2350 7800 2350
-Wire Wire Line
-	4200 1350 4200 1400
 $Comp
 L Device:R R2
 U 1 1 5C638997
@@ -461,7 +441,6 @@ Wire Wire Line
 	2900 1400 2950 1400
 Wire Wire Line
 	2950 1900 2950 1800
-Connection ~ 2950 1900
 Wire Wire Line
 	2950 1500 2950 1400
 Connection ~ 2950 1400
@@ -476,17 +455,6 @@ F 1 "1k" H 4220 3905 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4080 3950 50  0001 C CNN
 F 3 "~" H 4150 3950 50  0001 C CNN
 	1    4150 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Library:FS8205A U2
-U 2 1 5C68BCD7
-P 3600 4300
-F 0 "U2" H 3400 4150 50  0000 C CNN
-F 1 "FS8205A" H 3800 4150 50  0000 C CNN
-F 2 "Package_SO:TSSOP-8_4.4x3mm_P0.65mm" H 3400 4050 50  0001 C CNN
-F 3 "https://www.ic-fortune.com/upload/Download/FS8205A-DS-12_EN.pdf" H 3400 4050 50  0001 C CNN
-	2    3600 4300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -511,22 +479,7 @@ F 3 "~" H 2950 3650 50  0001 C CNN
 	1    2950 3650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3150 3800 2950 3800
 Connection ~ 2950 3800
-$Comp
-L Library:DW01-P U1
-U 2 1 5C68BCF4
-P 3600 3650
-F 0 "U1" H 3300 3950 50  0000 C CNN
-F 1 "DW01-P" H 3900 3950 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 3350 3950 50  0001 C CNN
-F 3 "https://cdn.sparkfun.com/assets/learn_tutorials/2/5/1/DW01-P_DataSheet_V10.pdf" H 3350 3950 50  0001 C CNN
-	2    3600 3650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2950 3500 3150 3500
 Wire Wire Line
 	4150 4100 4150 4200
 Wire Wire Line
@@ -584,7 +537,6 @@ Wire Wire Line
 	2900 3000 2950 3000
 Wire Wire Line
 	2950 3500 2950 3400
-Connection ~ 2950 3500
 Wire Wire Line
 	2950 3100 2950 3000
 $Comp
@@ -596,17 +548,6 @@ F 1 "1k" H 4220 5505 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4080 5550 50  0001 C CNN
 F 3 "~" H 4150 5550 50  0001 C CNN
 	1    4150 5550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Library:FS8205A U2
-U 3 1 5C693DD1
-P 3600 5900
-F 0 "U2" H 3400 5750 50  0000 C CNN
-F 1 "FS8205A" H 3800 5750 50  0000 C CNN
-F 2 "Package_SO:TSSOP-8_4.4x3mm_P0.65mm" H 3400 5650 50  0001 C CNN
-F 3 "https://www.ic-fortune.com/upload/Download/FS8205A-DS-12_EN.pdf" H 3400 5650 50  0001 C CNN
-	3    3600 5900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -631,22 +572,7 @@ F 3 "~" H 2950 5250 50  0001 C CNN
 	1    2950 5250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3150 5400 2950 5400
 Connection ~ 2950 5400
-$Comp
-L Library:DW01-P U1
-U 3 1 5C693DE8
-P 3600 5250
-F 0 "U1" H 3300 5550 50  0000 C CNN
-F 1 "DW01-P" H 3900 5550 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 3350 5550 50  0001 C CNN
-F 3 "https://cdn.sparkfun.com/assets/learn_tutorials/2/5/1/DW01-P_DataSheet_V10.pdf" H 3350 5550 50  0001 C CNN
-	3    3600 5250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2950 5100 3150 5100
 Wire Wire Line
 	4150 5700 4150 5800
 Wire Wire Line
@@ -704,7 +630,6 @@ Wire Wire Line
 	2900 4600 2950 4600
 Wire Wire Line
 	2950 5100 2950 5000
-Connection ~ 2950 5100
 Wire Wire Line
 	2950 4700 2950 4600
 Wire Wire Line
@@ -903,9 +828,94 @@ U 1 1 5C94C6BA
 P 7950 1750
 F 0 "K1" V 8417 1750 50  0000 C CNN
 F 1 "FRM18" V 8326 1750 50  0000 C CNN
-F 2 "" H 8300 1700 50  0001 L CNN
+F 2 "Footprints:RFM18" H 8300 1700 50  0001 L CNN
 F 3 "https://www.tme.eu/pl/Document/89b4103d1f3caa57a1b3e92993b9af62/FRM18.pdf?fbclid=IwAR2nivsTICXGdIlFtGx6DdiS3tLQJLmOYCGR6QBl4_J1FSsytW3mL1SHknk" H 7950 1750 50  0001 C CNN
 	1    7950 1750
 	0    1    -1   0   
 $EndComp
+$Comp
+L Switch:SW_SPDT SW1
+U 1 1 5C9AB870
+P 3800 1400
+F 0 "SW1" H 3800 1593 50  0000 C CNN
+F 1 "SW_SPDT" H 3800 1594 50  0001 C CNN
+F 2 "Footprints:5MS1S102AM6QE" H 3800 1400 50  0001 C CNN
+F 3 "" H 3800 1400 50  0001 C CNN
+	1    3800 1400
+	1    0    0    1   
+$EndComp
+$Comp
+L Library:DW01-P U3
+U 1 1 5C9B2C7B
+P 3600 3650
+F 0 "U3" H 3300 3950 50  0000 C CNN
+F 1 "DW01-P" H 3900 3950 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 3350 3950 50  0001 C CNN
+F 3 "https://cdn.sparkfun.com/assets/learn_tutorials/2/5/1/DW01-P_DataSheet_V10.pdf" H 3350 3950 50  0001 C CNN
+	1    3600 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Library:DW01-P U5
+U 1 1 5C9B5450
+P 3600 5250
+F 0 "U5" H 3300 5550 50  0000 C CNN
+F 1 "DW01-P" H 3900 5550 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 3350 5550 50  0001 C CNN
+F 3 "https://cdn.sparkfun.com/assets/learn_tutorials/2/5/1/DW01-P_DataSheet_V10.pdf" H 3350 5550 50  0001 C CNN
+	1    3600 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Library:FS8205A U4
+U 1 1 5C9B5500
+P 3600 4300
+F 0 "U4" H 3400 4150 50  0000 C CNN
+F 1 "FS8205A" H 3800 4150 50  0000 C CNN
+F 2 "Package_SO:TSSOP-8_4.4x3mm_P0.65mm" H 3400 4050 50  0001 C CNN
+F 3 "https://www.ic-fortune.com/upload/Download/FS8205A-DS-12_EN.pdf" H 3400 4050 50  0001 C CNN
+	1    3600 4300
+	1    0    0    -1  
+$EndComp
+Connection ~ 3250 4200
+$Comp
+L Library:FS8205A U6
+U 1 1 5C9B55A6
+P 3600 5900
+F 0 "U6" H 3400 5750 50  0000 C CNN
+F 1 "FS8205A" H 3800 5750 50  0000 C CNN
+F 2 "Package_SO:TSSOP-8_4.4x3mm_P0.65mm" H 3400 5650 50  0001 C CNN
+F 3 "https://www.ic-fortune.com/upload/Download/FS8205A-DS-12_EN.pdf" H 3400 5650 50  0001 C CNN
+	1    3600 5900
+	1    0    0    -1  
+$EndComp
+Connection ~ 3250 5800
+Wire Wire Line
+	2950 2200 3150 2200
+Wire Wire Line
+	2950 1900 3150 1900
+Connection ~ 2950 1900
+Wire Wire Line
+	2950 3800 3150 3800
+Wire Wire Line
+	2950 3500 3150 3500
+Connection ~ 2950 3500
+Wire Wire Line
+	2950 5100 3150 5100
+Connection ~ 2950 5100
+Wire Wire Line
+	2950 5400 3150 5400
+Wire Wire Line
+	9200 1850 9500 1850
+Connection ~ 8500 1850
+NoConn ~ 4150 3500
+NoConn ~ 4150 1900
+NoConn ~ 4150 5100
+Wire Wire Line
+	4000 1500 4000 1550
+Wire Wire Line
+	4000 1550 3600 1550
+Wire Wire Line
+	3600 1550 3600 1400
+Connection ~ 3600 1400
 $EndSCHEMATC
