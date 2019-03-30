@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:SafetySystem-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -30,12 +29,12 @@ Wejścia na przyciski\nbezpieczeństwa
 $Comp
 L Connector:Screw_Terminal_01x02 J?
 U 1 1 5C69DAF9
-P 1200 1100
-F 0 "J?" H 1120 1225 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 1120 1226 50  0001 C CNN
-F 2 "Footprints:TerminalBlock_DG250_02P" H 1200 1100 50  0001 C CNN
-F 3 "~" H 1200 1100 50  0001 C CNN
-	1    1200 1100
+P 1200 1200
+F 0 "J?" H 1120 1325 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 1120 1326 50  0001 C CNN
+F 2 "Footprints:TerminalBlock_DG250_02P" H 1200 1200 50  0001 C CNN
+F 3 "~" H 1200 1200 50  0001 C CNN
+	1    1200 1200
 	-1   0    0    -1  
 $EndComp
 Text Notes 900  1550 1    50   ~ 0
@@ -51,8 +50,6 @@ F 3 "" H 2000 1700 50  0001 C CNN
 	1    2000 1700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1400 1200 1400 1700
 $Comp
 L Device:Q_PMOS_GSD Q?
 U 1 1 5C69DD45
@@ -150,7 +147,7 @@ U 1 1 5C69EA07
 P 3700 1350
 F 0 "C?" H 3815 1396 50  0000 L CNN
 F 1 "10u" H 3815 1305 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3738 1200 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3738 1200 50  0001 C CNN
 F 3 "~" H 3700 1350 50  0001 C CNN
 	1    3700 1350
 	1    0    0    -1  
@@ -199,9 +196,9 @@ L Device:L_Core_Ferrite L?
 U 1 1 5C69FB70
 P 5650 1100
 F 0 "L?" V 5875 1100 50  0000 C CNN
-F 1 "4u7" V 5784 1100 50  0000 C CNN
-F 2 "Inductor_SMD:L_1812_4532Metric_Pad1.30x3.40mm_HandSolder" H 5650 1100 50  0001 C CNN
-F 3 "~" H 5650 1100 50  0001 C CNN
+F 1 "3u3" V 5784 1100 50  0000 C CNN
+F 2 "Footprints:L_HPI0530-3R3" H 5650 1100 50  0001 C CNN
+F 3 "https://www.tme.eu/pl/details/hpi0530-3r3/dlawiki-smd-mocy/ferrocore/" H 5650 1100 50  0001 C CNN
 	1    5650 1100
 	0    -1   -1   0   
 $EndComp
@@ -233,7 +230,7 @@ U 1 1 5C6A0112
 P 6050 1450
 F 0 "C?" H 6165 1496 50  0000 L CNN
 F 1 "10u" H 6165 1405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6088 1300 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6088 1300 50  0001 C CNN
 F 3 "~" H 6050 1450 50  0001 C CNN
 	1    6050 1450
 	1    0    0    -1  
@@ -342,17 +339,6 @@ F 3 "" H 3700 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 3700 1100
-$Comp
-L Switch:SW_SPST SW?
-U 1 1 5C6A54E1
-P 1600 1100
-F 0 "SW?" H 1600 1243 50  0000 C CNN
-F 1 "SW_SPST" H 1600 1244 50  0001 C CNN
-F 2 "Footprints:5MS1S102AM2QE" H 1600 1100 50  0001 C CNN
-F 3 "" H 1600 1100 50  0001 C CNN
-	1    1600 1100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1400 1700 2000 1700
 Text Notes 1400 850  0    50   ~ 0
@@ -599,7 +585,7 @@ U 1 1 5C6A5F35
 P 7850 1450
 F 0 "SW?" H 7850 1643 50  0000 C CNN
 F 1 "SW_Push" H 7850 1644 50  0001 C CNN
-F 2 "" H 7850 1650 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_TL3342" H 7850 1650 50  0001 C CNN
 F 3 "" H 7850 1650 50  0001 C CNN
 	1    7850 1450
 	1    0    0    -1  
@@ -773,7 +759,7 @@ F 3 "" H 9500 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SafetySystem-rescue:MQ-8-Library-SafetySystem-rescue U?
+L Library:MQ-8 U?
 U 1 1 5C6BF30D
 P 10000 2250
 F 0 "U?" H 9800 2450 50  0000 L CNN
@@ -911,7 +897,7 @@ U 1 1 5C6CF98E
 P 9200 5500
 F 0 "BZ?" H 9353 5529 50  0000 L CNN
 F 1 "Buzzer" H 9353 5438 50  0000 L CNN
-F 2 "" V 9175 5600 50  0001 C CNN
+F 2 "Buzzer_Beeper:Buzzer_12x9.5RM7.6" V 9175 5600 50  0001 C CNN
 F 3 "~" V 9175 5600 50  0001 C CNN
 	1    9200 5500
 	1    0    0    -1  
@@ -1063,7 +1049,7 @@ U 1 1 5C7493F0
 P 3450 3200
 F 0 "SW?" H 3450 3100 50  0000 C CNN
 F 1 "SW_Push" H 3450 3394 50  0001 C CNN
-F 2 "" H 3450 3400 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_PUSH-12mm" H 3450 3400 50  0001 C CNN
 F 3 "" H 3450 3400 50  0001 C CNN
 	1    3450 3200
 	1    0    0    -1  
@@ -1178,8 +1164,8 @@ U 1 1 5C7636D3
 P 1800 6400
 F 0 "U?" H 1650 6600 50  0000 C CNN
 F 1 "LTV-817S" H 1800 6634 50  0001 C CNN
-F 2 "Package_DIP:SMDIP-4_W9.53mm" H 1800 6100 50  0001 C CNN
-F 3 "http://www.us.liteon.com/downloads/LTV-817-827-847.PDF" H 1450 6700 50  0001 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm_LongPads" H 1800 6100 50  0001 C CNN
+F 3 "https://www.tme.eu/pl/details/fod817c/transoptory-wyjscie-cyfrowe/on-semiconductor-fairchild/" H 1450 6700 50  0001 C CNN
 	1    1800 6400
 	1    0    0    -1  
 $EndComp
@@ -1270,7 +1256,7 @@ U 1 1 5C7C137D
 P 2700 6600
 F 0 "SW?" V 2700 6500 50  0000 C CNN
 F 1 "SW_Push" H 2700 6794 50  0001 C CNN
-F 2 "" H 2700 6800 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_PUSH-12mm" H 2700 6800 50  0001 C CNN
 F 3 "" H 2700 6800 50  0001 C CNN
 	1    2700 6600
 	0    -1   1    0   
@@ -1438,17 +1424,6 @@ F 3 "" H 6000 6600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Isolator:LTV-817S U?
-U 1 1 5C80275A
-P 5100 6400
-F 0 "U?" H 5100 6725 50  0000 C CNN
-F 1 "LTV-817S" H 5100 6634 50  0000 C CNN
-F 2 "Package_DIP:SMDIP-4_W9.53mm" H 5100 6100 50  0001 C CNN
-F 3 "http://www.us.liteon.com/downloads/LTV-817-827-847.PDF" H 4750 6700 50  0001 C CNN
-	1    5100 6400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Q_NMOS_GSD Q?
 U 1 1 5C802761
 P 5600 6500
@@ -1492,7 +1467,6 @@ F 3 "" H 5400 6200 50  0001 C CNN
 	1    5400 6200
 	1    0    0    -1  
 $EndComp
-Connection ~ 5400 6500
 Wire Wire Line
 	5400 6200 5400 6300
 $Comp
@@ -1837,7 +1811,7 @@ U 1 1 5C71D151
 P 7550 1850
 F 0 "Y?" H 7300 1900 50  0000 C CNN
 F 1 "8Mhz" H 7250 1800 50  0000 C CNN
-F 2 "Crystal:Crystal_SMD_HC49-SD_HandSoldering" H 7550 1850 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_HC49-SD" H 7550 1850 50  0001 C CNN
 F 3 "~" H 7550 1850 50  0001 C CNN
 	1    7550 1850
 	1    0    0    -1  
@@ -1847,7 +1821,7 @@ L Device:C C?
 U 1 1 5C72A1D0
 P 7400 2050
 F 0 "C?" H 7515 2096 50  0000 L CNN
-F 1 "100n" H 7515 2005 50  0000 L CNN
+F 1 "12p" H 7515 2005 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7438 1900 50  0001 C CNN
 F 3 "~" H 7400 2050 50  0001 C CNN
 	1    7400 2050
@@ -1869,7 +1843,7 @@ L Device:C C?
 U 1 1 5C72D4D1
 P 7700 2050
 F 0 "C?" H 7750 2150 50  0000 L CNN
-F 1 "100n" H 7750 1900 50  0000 L CNN
+F 1 "12p" H 7800 2000 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7738 1900 50  0001 C CNN
 F 3 "~" H 7700 2050 50  0001 C CNN
 	1    7700 2050
@@ -1902,4 +1876,36 @@ Wire Wire Line
 	2000 1700 2350 1700
 Wire Wire Line
 	2200 1100 2350 1100
+$Comp
+L Switch:SW_SPDT SW?
+U 1 1 5C9FE7C5
+P 1600 1200
+F 0 "SW?" H 1600 1393 50  0000 C CNN
+F 1 "SW_SPDT" H 1600 1394 50  0001 C CNN
+F 2 "Footprints:5MS1S102AM6QE" H 1600 1200 50  0001 C CNN
+F 3 "" H 1600 1200 50  0001 C CNN
+	1    1600 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 1300 1800 1400
+Wire Wire Line
+	1400 1300 1400 1400
+Wire Wire Line
+	1400 1400 1800 1400
+Connection ~ 1400 1400
+Wire Wire Line
+	1400 1400 1400 1700
+$Comp
+L Isolator:LTV-817S U?
+U 1 1 5CA27408
+P 5100 6400
+F 0 "U?" H 4950 6600 50  0000 C CNN
+F 1 "LTV-817S" H 5100 6634 50  0001 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm_LongPads" H 5100 6100 50  0001 C CNN
+F 3 "https://www.tme.eu/pl/details/fod817c/transoptory-wyjscie-cyfrowe/on-semiconductor-fairchild/" H 4750 6700 50  0001 C CNN
+	1    5100 6400
+	1    0    0    -1  
+$EndComp
+Connection ~ 5400 6500
 $EndSCHEMATC
