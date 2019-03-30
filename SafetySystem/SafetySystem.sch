@@ -348,7 +348,7 @@ U 1 1 5C6A54E1
 P 1600 1100
 F 0 "SW?" H 1600 1243 50  0000 C CNN
 F 1 "SW_SPST" H 1600 1244 50  0001 C CNN
-F 2 "" H 1600 1100 50  0001 C CNN
+F 2 "Footprints:5MS1S102AM2QE" H 1600 1100 50  0001 C CNN
 F 3 "" H 1600 1100 50  0001 C CNN
 	1    1600 1100
 	1    0    0    -1  
@@ -773,12 +773,12 @@ F 3 "" H 9500 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SafetySystem-rescue:MQ-8-Library U?
+L SafetySystem-rescue:MQ-8-Library-SafetySystem-rescue U?
 U 1 1 5C6BF30D
 P 10000 2250
 F 0 "U?" H 9800 2450 50  0000 L CNN
 F 1 "MQ-8" H 10100 2100 50  0000 L CNN
-F 2 "" H 10000 2250 50  0001 C CNN
+F 2 "Footprints:MQ8_hydrogen_sens" H 10000 2250 50  0001 C CNN
 F 3 "https://dlnmh9ip6v2uc.cloudfront.net/datasheets/Sensors/Biometric/MQ-8.pdf" H 10000 2250 50  0001 C CNN
 	1    10000 2250
 	1    0    0    -1  
