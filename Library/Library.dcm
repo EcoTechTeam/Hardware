@@ -27,4 +27,10 @@ K H2
 F https://dlnmh9ip6v2uc.cloudfront.net/datasheets/Sensors/Biometric/MQ-8.pdf
 $ENDCMP
 #
+$CMP R30N
+D R30N, Single Pole Relay SPST-NO, 30A
+K Single Pole Relay SPST-NO
+F https://www.tme.eu/pl/Document/d84e58b273b47d235ca1e19ed7eca28c/R30N-PL.pdf
+$ENDCMP
+#
 #End Doc Library
