@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:SafetySupply-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -281,7 +280,7 @@ U 1 1 5C664BB9
 P 5150 1700
 F 0 "C1" H 5268 1746 50  0000 L CNN
 F 1 "470u" H 5268 1655 50  0000 L CNN
-F 2 "Capacitor_THT:C_Radial_D10.0mm_H20.0mm_P5.00mm" H 5188 1550 50  0001 C CNN
+F 2 "Footprints:C_Radial_D10.0mm_H20.0mm_P5.00mm" H 5188 1550 50  0001 C CNN
 F 3 "~" H 5150 1700 50  0001 C CNN
 	1    5150 1700
 	1    0    0    -1  
