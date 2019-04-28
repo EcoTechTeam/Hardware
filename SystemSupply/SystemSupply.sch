@@ -1038,4 +1038,59 @@ Wire Wire Line
 Wire Wire Line
 	4500 3100 4500 3250
 Connection ~ 4500 3250
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5CCA9CDE
+P 6050 1150
+F 0 "H1" H 6150 1150 50  0000 L CNN
+F 1 "MountingHole" H 6150 1105 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6050 1150 50  0001 C CNN
+F 3 "~" H 6050 1150 50  0001 C CNN
+	1    6050 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5CCA9EC4
+P 6350 1150
+F 0 "H2" H 6450 1150 50  0000 L CNN
+F 1 "MountingHole" H 6450 1105 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6350 1150 50  0001 C CNN
+F 3 "~" H 6350 1150 50  0001 C CNN
+	1    6350 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5CCACC01
+P 6050 1350
+F 0 "H3" H 6150 1350 50  0000 L CNN
+F 1 "MountingHole" H 6150 1305 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6050 1350 50  0001 C CNN
+F 3 "~" H 6050 1350 50  0001 C CNN
+	1    6050 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5CCAF938
+P 6350 1350
+F 0 "H4" H 6450 1350 50  0000 L CNN
+F 1 "MountingHole" H 6450 1305 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6350 1350 50  0001 C CNN
+F 3 "~" H 6350 1350 50  0001 C CNN
+	1    6350 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Library:EcoTechLogo G1
+U 1 1 5CCB2A30
+P 6000 950
+F 0 "G1" H 6000 1050 50  0001 C CNN
+F 1 "EcoTechLogo" H 6025 950 50  0000 L CNN
+F 2 "Footprints:EcoTech" H 6000 950 50  0001 C CNN
+F 3 "" H 6000 950 50  0001 C CNN
+	1    6000 950 
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

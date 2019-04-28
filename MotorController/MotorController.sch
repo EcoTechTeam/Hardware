@@ -726,12 +726,12 @@ $EndComp
 $Comp
 L power:+12V #PWR011
 U 1 1 5CAFF922
-P 2700 1700
-F 0 "#PWR011" H 2700 1550 50  0001 C CNN
-F 1 "+12V" H 2715 1873 50  0000 C CNN
-F 2 "" H 2700 1700 50  0001 C CNN
-F 3 "" H 2700 1700 50  0001 C CNN
-	1    2700 1700
+P 2450 1800
+F 0 "#PWR011" H 2450 1650 50  0001 C CNN
+F 1 "+12V" H 2465 1973 50  0000 C CNN
+F 2 "" H 2450 1800 50  0001 C CNN
+F 3 "" H 2450 1800 50  0001 C CNN
+	1    2450 1800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -745,30 +745,9 @@ F 3 "" H 2000 2100 50  0001 C CNN
 	1    2000 2100
 	1    0    0    -1  
 $EndComp
-$Comp
-L Switch:SW_SPDT SW1
-U 1 1 5CB0007A
-P 2400 1800
-F 0 "SW1" H 2500 1650 50  0000 C CNN
-F 1 "SW_SPDT" H 2400 1994 50  0001 C CNN
-F 2 "Footprints:5MS1S102AM6QE" H 2400 1800 50  0001 C CNN
-F 3 "" H 2400 1800 50  0001 C CNN
-	1    2400 1800
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	1650 1800 2000 1800
-Wire Wire Line
-	2000 1800 2200 1800
 Connection ~ 2000 1800
-Wire Wire Line
-	2200 1800 2200 1950
-Wire Wire Line
-	2200 1950 2600 1950
-Wire Wire Line
-	2600 1950 2600 1900
-Wire Wire Line
-	2700 1700 2600 1700
 $Comp
 L Connector:8P8C J3
 U 1 1 5CB0473F
@@ -963,5 +942,61 @@ F 3 "" H 3000 1700 50  0001 C CNN
 	1    3000 1700
 	1    0    0    -1  
 $EndComp
-Connection ~ 2200 1800
+Wire Wire Line
+	2000 1800 2450 1800
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5CC8BA42
+P 9950 800
+F 0 "H1" H 10050 800 50  0000 L CNN
+F 1 "MountingHole" H 10050 755 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9950 800 50  0001 C CNN
+F 3 "~" H 9950 800 50  0001 C CNN
+	1    9950 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5CC8BCA2
+P 10250 800
+F 0 "H2" H 10350 800 50  0000 L CNN
+F 1 "MountingHole" H 10350 755 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10250 800 50  0001 C CNN
+F 3 "~" H 10250 800 50  0001 C CNN
+	1    10250 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5CC8C159
+P 9950 1000
+F 0 "H3" H 10050 1000 50  0000 L CNN
+F 1 "MountingHole" H 10050 955 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9950 1000 50  0001 C CNN
+F 3 "~" H 9950 1000 50  0001 C CNN
+	1    9950 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5CC8C160
+P 10250 1000
+F 0 "H4" H 10350 1000 50  0000 L CNN
+F 1 "MountingHole" H 10350 955 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10250 1000 50  0001 C CNN
+F 3 "~" H 10250 1000 50  0001 C CNN
+	1    10250 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Library:EcoTechLogo G1
+U 1 1 5CC8C718
+P 9900 1150
+F 0 "G1" H 9900 1250 50  0001 C CNN
+F 1 "EcoTechLogo" H 9925 1150 50  0000 L CNN
+F 2 "Footprints:EcoTech" H 9900 1150 50  0001 C CNN
+F 3 "" H 9900 1150 50  0001 C CNN
+	1    9900 1150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:SafetySupply-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -917,4 +918,37 @@ Wire Wire Line
 Wire Wire Line
 	3600 1550 3600 1400
 Connection ~ 3600 1400
+$Comp
+L Library:EcoTechLogo G1
+U 1 1 5CC90702
+P 7100 5900
+F 0 "G1" H 7100 6000 50  0001 C CNN
+F 1 "EcoTechLogo" H 7125 5900 50  0000 L CNN
+F 2 "Footprints:EcoTech_small" H 7100 5900 50  0001 C CNN
+F 3 "" H 7100 5900 50  0001 C CNN
+	1    7100 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5CC907BB
+P 7100 5550
+F 0 "H1" H 7200 5550 50  0000 L CNN
+F 1 "MountingHole" H 7200 5505 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 7100 5550 50  0001 C CNN
+F 3 "~" H 7100 5550 50  0001 C CNN
+	1    7100 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5CC90BEA
+P 7450 5550
+F 0 "H2" H 7550 5550 50  0000 L CNN
+F 1 "MountingHole" H 7550 5505 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 7450 5550 50  0001 C CNN
+F 3 "~" H 7450 5550 50  0001 C CNN
+	1    7450 5550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
