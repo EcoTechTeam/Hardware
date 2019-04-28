@@ -485,55 +485,6 @@ F 3 "" H 8900 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDA #PWR0117
-U 1 1 5C6A30DC
-P 6350 2650
-F 0 "#PWR0117" H 6350 2400 50  0001 C CNN
-F 1 "GNDA" H 6355 2477 50  0000 C CNN
-F 2 "" H 6350 2650 50  0001 C CNN
-F 3 "" H 6350 2650 50  0001 C CNN
-	1    6350 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Net-Tie_2 NT1
-U 1 1 5C6A3193
-P 6100 2650
-F 0 "NT1" H 6100 2550 50  0000 C CNN
-F 1 "Net-Tie_2" H 6100 2737 50  0001 C CNN
-F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 6100 2650 50  0001 C CNN
-F 3 "~" H 6100 2650 50  0001 C CNN
-	1    6100 2650
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	6000 2650 5850 2650
-Wire Wire Line
-	6200 2650 6350 2650
-Connection ~ 6350 2650
-$Comp
-L power:GNDA #PWR0118
-U 1 1 5C6A41FC
-P 9000 3950
-F 0 "#PWR0118" H 9000 3700 50  0001 C CNN
-F 1 "GNDA" H 9100 3800 50  0000 C CNN
-F 2 "" H 9000 3950 50  0001 C CNN
-F 3 "" H 9000 3950 50  0001 C CNN
-	1    9000 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDA #PWR0119
-U 1 1 5C6A49D3
-P 8150 2400
-F 0 "#PWR0119" H 8150 2150 50  0001 C CNN
-F 1 "GNDA" H 8155 2227 50  0000 C CNN
-F 2 "" H 8150 2400 50  0001 C CNN
-F 3 "" H 8150 2400 50  0001 C CNN
-	1    8150 2400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R4
 U 1 1 5C6A4ABF
 P 8150 1300
@@ -1196,8 +1147,6 @@ F 3 "" H 2700 6800 50  0001 C CNN
 $EndComp
 Text Label 2400 6300 0    50   ~ 0
 INLET
-Text Label 1750 7000 2    50   ~ 0
-INLET
 Text Notes 750  6700 1    50   ~ 0
 Wejście sygnału\nzaworu dolotowego
 Text Notes 2600 5700 0    50   ~ 0
@@ -1795,7 +1744,6 @@ F 3 "https://www.tme.eu/pl/details/fod817c/transoptory-wyjscie-cyfrowe/on-semico
 	1    0    0    -1  
 $EndComp
 Connection ~ 5400 6500
-NoConn ~ 9500 2150
 NoConn ~ 9500 2350
 NoConn ~ 9500 2450
 NoConn ~ 9500 2550
@@ -1836,20 +1784,8 @@ Wire Wire Line
 	5600 2350 5850 2350
 Wire Wire Line
 	5850 2650 5600 2650
-Connection ~ 5850 2650
 Connection ~ 5600 2650
 Connection ~ 5600 2350
-$Comp
-L power:GNDA #PWR0112
-U 1 1 5CA1826A
-P 9750 2550
-F 0 "#PWR0112" H 9750 2300 50  0001 C CNN
-F 1 "GNDA" H 9850 2400 50  0000 C CNN
-F 2 "" H 9750 2550 50  0001 C CNN
-F 3 "" H 9750 2550 50  0001 C CNN
-	1    9750 2550
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0128
 U 1 1 5CA1857E
@@ -1937,4 +1873,90 @@ F 3 "https://dlnmh9ip6v2uc.cloudfront.net/datasheets/Sensors/Biometric/MQ-8.pdf"
 	1    0    0    -1  
 $EndComp
 Connection ~ 9750 2250
+$Comp
+L Device:R_POT RV1
+U 1 1 5CC5B6AF
+P 10750 3150
+F 0 "RV1" H 10681 3104 50  0000 R CNN
+F 1 "10k" H 10681 3195 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Runtron_RM-065_Vertical" H 10750 3150 50  0001 C CNN
+F 3 "~" H 10750 3150 50  0001 C CNN
+	1    10750 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5VA #PWR0112
+U 1 1 5CC5BA9F
+P 10750 3000
+F 0 "#PWR0112" H 10750 2850 50  0001 C CNN
+F 1 "+5VA" H 10800 3150 50  0000 C CNN
+F 2 "" H 10750 3000 50  0001 C CNN
+F 3 "" H 10750 3000 50  0001 C CNN
+	1    10750 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 5CC5C25C
+P 6350 2650
+F 0 "#PWR0117" H 6350 2400 50  0001 C CNN
+F 1 "GND" H 6355 2477 50  0000 C CNN
+F 2 "" H 6350 2650 50  0001 C CNN
+F 3 "" H 6350 2650 50  0001 C CNN
+	1    6350 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 5CC5C412
+P 8150 2400
+F 0 "#PWR0118" H 8150 2150 50  0001 C CNN
+F 1 "GND" H 8155 2227 50  0000 C CNN
+F 2 "" H 8150 2400 50  0001 C CNN
+F 3 "" H 8150 2400 50  0001 C CNN
+	1    8150 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0119
+U 1 1 5CC5C5C2
+P 9750 2550
+F 0 "#PWR0119" H 9750 2300 50  0001 C CNN
+F 1 "GND" H 9650 2400 50  0000 C CNN
+F 2 "" H 9750 2550 50  0001 C CNN
+F 3 "" H 9750 2550 50  0001 C CNN
+	1    9750 2550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0136
+U 1 1 5CC5C772
+P 10750 3300
+F 0 "#PWR0136" H 10750 3050 50  0001 C CNN
+F 1 "GND" H 10650 3150 50  0000 C CNN
+F 2 "" H 10750 3300 50  0001 C CNN
+F 3 "" H 10750 3300 50  0001 C CNN
+	1    10750 3300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 3950 8900 3950
+Connection ~ 8900 3950
+Text Label 9500 2150 0    50   ~ 0
+ADC_POT
+Text Label 10250 3150 0    50   ~ 0
+ADC_POT
+Wire Wire Line
+	10250 3150 10600 3150
+$Comp
+L Library:EcoTechLogo G1
+U 1 1 5CC67452
+P 10600 650
+F 0 "G1" H 10600 750 50  0001 C CNN
+F 1 "EcoTechLogo" H 10625 650 50  0000 L CNN
+F 2 "Footprints:EcoTech_small" H 10600 650 50  0001 C CNN
+F 3 "" H 10600 650 50  0001 C CNN
+	1    10600 650 
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

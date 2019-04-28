@@ -226,7 +226,7 @@
   (module Footprints:Fuse_Blade_90 (layer F.Cu) (tedit 5C9E8B85) (tstamp 5C9D3F22)
     (at 158 69 90)
     (path /5C65D5E9)
-    (fp_text reference F1 (at 0 -6 270) (layer F.SilkS)
+    (fp_text reference F1 (at 2.3 -8 270) (layer F.SilkS)
       (effects (font (size 0.5 0.5) (thickness 0.1)))
     )
     (fp_text value Fuse (at 0 -7.112 90) (layer F.Fab)
