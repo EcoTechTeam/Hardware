@@ -679,8 +679,6 @@ Wire Wire Line
 Wire Wire Line
 	6150 950  5650 950 
 Connection ~ 5650 950 
-Wire Wire Line
-	5750 1600 5500 1600
 Text Label 5500 1600 0    50   ~ 0
 ADC_I
 $Comp
@@ -914,10 +912,6 @@ Text Label 8850 5600 2    50   ~ 0
 A
 Text Label 8850 5300 2    50   ~ 0
 B
-Wire Wire Line
-	8850 5300 8800 5300
-Wire Wire Line
-	8850 5600 8800 5600
 $Comp
 L power:+3V3 #PWR027
 U 1 1 5CA7A630
@@ -1024,47 +1018,43 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_02x03_Odd_Even J6
 U 1 1 5CACE531
-P 7250 3300
-F 0 "J6" H 7300 3525 50  0000 C CNN
-F 1 "Conn_02x03_Odd_Even" H 7300 3526 50  0001 C CNN
-F 2 "Connector_IDC:IDC-Header_2x03_P2.54mm_Vertical" H 7250 3300 50  0001 C CNN
-F 3 "~" H 7250 3300 50  0001 C CNN
-	1    7250 3300
+P 7750 3300
+F 0 "J6" H 7800 3525 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 7800 3526 50  0001 C CNN
+F 2 "Connector_IDC:IDC-Header_2x03_P2.54mm_Vertical" H 7750 3300 50  0001 C CNN
+F 3 "~" H 7750 3300 50  0001 C CNN
+	1    7750 3300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6850 3200 7050 3200
-Wire Wire Line
-	6850 3300 7050 3300
-Text Label 6850 3300 0    50   ~ 0
+Text Label 7350 3300 0    50   ~ 0
 ENCA
-Text Label 6850 3200 0    50   ~ 0
+Text Label 7350 3200 0    50   ~ 0
 ENCB
-Text Label 7550 3300 0    50   ~ 0
+Text Label 8050 3300 0    50   ~ 0
 ENCI
 $Comp
 L power:GND #PWR016
 U 1 1 5CAD4884
-P 7050 3400
-F 0 "#PWR016" H 7050 3150 50  0001 C CNN
-F 1 "GND" H 7055 3227 50  0000 C CNN
-F 2 "" H 7050 3400 50  0001 C CNN
-F 3 "" H 7050 3400 50  0001 C CNN
-	1    7050 3400
+P 7550 3400
+F 0 "#PWR016" H 7550 3150 50  0001 C CNN
+F 1 "GND" H 7555 3227 50  0000 C CNN
+F 2 "" H 7550 3400 50  0001 C CNN
+F 3 "" H 7550 3400 50  0001 C CNN
+	1    7550 3400
 	-1   0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR015
 U 1 1 5CAD4EEF
-P 7550 3200
-F 0 "#PWR015" H 7550 3050 50  0001 C CNN
-F 1 "+5V" H 7565 3373 50  0000 C CNN
-F 2 "" H 7550 3200 50  0001 C CNN
-F 3 "" H 7550 3200 50  0001 C CNN
-	1    7550 3200
+P 8050 3200
+F 0 "#PWR015" H 8050 3050 50  0001 C CNN
+F 1 "+5V" H 8065 3373 50  0000 C CNN
+F 2 "" H 8050 3200 50  0001 C CNN
+F 3 "" H 8050 3200 50  0001 C CNN
+	1    8050 3200
 	1    0    0    -1  
 $EndComp
-Text Notes 7000 2900 0    50   ~ 0
+Text Notes 7500 2900 0    50   ~ 0
 Enkoder złącze
 Text Notes 10000 4500 0    50   ~ 0
 Złącza magistrali
@@ -1101,26 +1091,26 @@ Wire Wire Line
 $Comp
 L Switch:SW_Push SW3
 U 1 1 5CAF1DCA
-P 6600 7100
-F 0 "SW3" H 6600 7293 50  0000 C CNN
-F 1 "SW_Push" H 6600 7294 50  0001 C CNN
-F 2 "Button_Switch_SMD:SW_SPST_TL3342" H 6600 7300 50  0001 C CNN
-F 3 "" H 6600 7300 50  0001 C CNN
-	1    6600 7100
+P 6600 6950
+F 0 "SW3" H 6600 7143 50  0000 C CNN
+F 1 "SW_Push" H 6600 7144 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_TL3342" H 6600 7150 50  0001 C CNN
+F 3 "" H 6600 7150 50  0001 C CNN
+	1    6600 6950
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR038
 U 1 1 5CAF1F0E
-P 6800 7100
-F 0 "#PWR038" H 6800 6850 50  0001 C CNN
-F 1 "GND" H 6805 6927 50  0000 C CNN
-F 2 "" H 6800 7100 50  0001 C CNN
-F 3 "" H 6800 7100 50  0001 C CNN
-	1    6800 7100
+P 6800 6950
+F 0 "#PWR038" H 6800 6700 50  0001 C CNN
+F 1 "GND" H 6805 6777 50  0000 C CNN
+F 2 "" H 6800 6950 50  0001 C CNN
+F 3 "" H 6800 6950 50  0001 C CNN
+	1    6800 6950
 	1    0    0    -1  
 $EndComp
-Text Notes 6400 6800 0    50   ~ 0
+Text Notes 6550 6650 0    50   ~ 0
 Test button
 Text Label 6100 6250 0    50   ~ 0
 HIN
@@ -1421,62 +1411,62 @@ B
 $Comp
 L Power_Protection:NUP2105L D3
 U 1 1 5CB0AF52
-P 8550 3250
-F 0 "D3" H 8755 3250 50  0000 L CNN
-F 1 "SM712.TCT" H 8755 3205 50  0001 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 8775 3200 50  0001 L CNN
-F 3 "http://www.onsemi.com/pub_link/Collateral/NUP2105L-D.PDF" H 8675 3375 50  0001 C CNN
-	1    8550 3250
+P 9050 3250
+F 0 "D3" H 9255 3250 50  0000 L CNN
+F 1 "SM712.TCT" H 9255 3205 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9275 3200 50  0001 L CNN
+F 3 "http://www.onsemi.com/pub_link/Collateral/NUP2105L-D.PDF" H 9175 3375 50  0001 C CNN
+	1    9050 3250
 	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR019
 U 1 1 5CB0AF59
-P 8550 3450
-F 0 "#PWR019" H 8550 3200 50  0001 C CNN
-F 1 "GND" H 8555 3277 50  0000 C CNN
-F 2 "" H 8550 3450 50  0001 C CNN
-F 3 "" H 8550 3450 50  0001 C CNN
-	1    8550 3450
+P 9050 3450
+F 0 "#PWR019" H 9050 3200 50  0001 C CNN
+F 1 "GND" H 9055 3277 50  0000 C CNN
+F 2 "" H 9050 3450 50  0001 C CNN
+F 3 "" H 9050 3450 50  0001 C CNN
+	1    9050 3450
 	-1   0    0    -1  
 $EndComp
-Text Label 8650 3050 1    50   ~ 0
+Text Label 9150 3050 1    50   ~ 0
 ENCA
-Text Label 8450 3050 1    50   ~ 0
+Text Label 8950 3050 1    50   ~ 0
 ENCB
 $Comp
 L Power_Protection:NUP2105L D2
 U 1 1 5CB14B0B
-P 8000 3250
-F 0 "D2" H 8205 3250 50  0000 L CNN
-F 1 "SM712.TCT" H 8205 3205 50  0001 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 8225 3200 50  0001 L CNN
-F 3 "http://www.onsemi.com/pub_link/Collateral/NUP2105L-D.PDF" H 8125 3375 50  0001 C CNN
-	1    8000 3250
+P 8500 3250
+F 0 "D2" H 8705 3250 50  0000 L CNN
+F 1 "SM712.TCT" H 8705 3205 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8725 3200 50  0001 L CNN
+F 3 "http://www.onsemi.com/pub_link/Collateral/NUP2105L-D.PDF" H 8625 3375 50  0001 C CNN
+	1    8500 3250
 	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR018
 U 1 1 5CB14B12
-P 8000 3450
-F 0 "#PWR018" H 8000 3200 50  0001 C CNN
-F 1 "GND" H 8005 3277 50  0000 C CNN
-F 2 "" H 8000 3450 50  0001 C CNN
-F 3 "" H 8000 3450 50  0001 C CNN
-	1    8000 3450
+P 8500 3450
+F 0 "#PWR018" H 8500 3200 50  0001 C CNN
+F 1 "GND" H 8505 3277 50  0000 C CNN
+F 2 "" H 8500 3450 50  0001 C CNN
+F 3 "" H 8500 3450 50  0001 C CNN
+	1    8500 3450
 	-1   0    0    -1  
 $EndComp
-Text Label 7900 3050 1    50   ~ 0
+Text Label 8400 3050 1    50   ~ 0
 ENCI
 $Comp
 L power:+5V #PWR014
 U 1 1 5CB27C1F
-P 8100 3050
-F 0 "#PWR014" H 8100 2900 50  0001 C CNN
-F 1 "+5V" H 8115 3223 50  0000 C CNN
-F 2 "" H 8100 3050 50  0001 C CNN
-F 3 "" H 8100 3050 50  0001 C CNN
-	1    8100 3050
+P 8600 3050
+F 0 "#PWR014" H 8600 2900 50  0001 C CNN
+F 1 "+5V" H 8615 3223 50  0000 C CNN
+F 2 "" H 8600 3050 50  0001 C CNN
+F 3 "" H 8600 3050 50  0001 C CNN
+	1    8600 3050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1828,12 +1818,6 @@ F 3 "" H 2900 7350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 2900 7350
-Wire Wire Line
-	6400 7100 6250 7100
-Wire Wire Line
-	6250 7100 6250 6950
-Wire Wire Line
-	6250 6950 6050 6950
 $Comp
 L power:+5V #PWR017
 U 1 1 5CC703AE
@@ -2057,4 +2041,188 @@ F 3 "~" H 10750 2500 50  0001 C CNN
 	1    10750 2500
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5CC6DE52
+P 4450 2250
+F 0 "TP5" H 4508 2324 50  0000 L CNN
+F 1 "TestPoint" H 4508 2279 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 4650 2250 50  0001 C CNN
+F 3 "~" H 4650 2250 50  0001 C CNN
+	1    4450 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5CC6DF10
+P 4450 2050
+F 0 "TP4" H 4508 2124 50  0000 L CNN
+F 1 "TestPoint" H 4508 2079 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 4650 2050 50  0001 C CNN
+F 3 "~" H 4650 2050 50  0001 C CNN
+	1    4450 2050
+	1    0    0    -1  
+$EndComp
+Text Label 4450 2250 2    50   ~ 0
+HG
+Text Label 4450 2050 2    50   ~ 0
+LG
+$Comp
+L Connector:TestPoint TP11
+U 1 1 5CCB8EBE
+P 8900 5300
+F 0 "TP11" H 8958 5374 50  0000 L CNN
+F 1 "TestPoint" H 8958 5329 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 9100 5300 50  0001 C CNN
+F 3 "~" H 9100 5300 50  0001 C CNN
+	1    8900 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP12
+U 1 1 5CCB93F0
+P 8900 5600
+F 0 "TP12" H 8958 5674 50  0000 L CNN
+F 1 "TestPoint" H 8958 5629 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 9100 5600 50  0001 C CNN
+F 3 "~" H 9100 5600 50  0001 C CNN
+	1    8900 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 5600 8900 5600
+Wire Wire Line
+	8800 5300 8900 5300
+$Comp
+L Connector:TestPoint TP10
+U 1 1 5CCC6DE4
+P 9650 4900
+F 0 "TP10" H 9708 4974 50  0000 L CNN
+F 1 "TestPoint" H 9708 4929 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 9850 4900 50  0001 C CNN
+F 3 "~" H 9850 4900 50  0001 C CNN
+	1    9650 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP9
+U 1 1 5CCC723E
+P 7050 3450
+F 0 "TP9" H 7108 3524 50  0000 L CNN
+F 1 "TestPoint" H 7108 3479 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 7250 3450 50  0001 C CNN
+F 3 "~" H 7250 3450 50  0001 C CNN
+	1    7050 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5CCC74A1
+P 7050 3250
+F 0 "TP8" H 7108 3324 50  0000 L CNN
+F 1 "TestPoint" H 7108 3279 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 7250 3250 50  0001 C CNN
+F 3 "~" H 7250 3250 50  0001 C CNN
+	1    7050 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5CCDB683
+P 7050 3050
+F 0 "TP7" H 7108 3124 50  0000 L CNN
+F 1 "TestPoint" H 7108 3079 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 7250 3050 50  0001 C CNN
+F 3 "~" H 7250 3050 50  0001 C CNN
+	1    7050 3050
+	1    0    0    -1  
+$EndComp
+Text Label 7050 3050 2    50   ~ 0
+ENCI
+Wire Wire Line
+	7350 3200 7550 3200
+Text Label 7050 3250 2    50   ~ 0
+ENCB
+Text Label 7050 3450 2    50   ~ 0
+ENCA
+Wire Wire Line
+	7350 3300 7550 3300
+Wire Wire Line
+	6050 6950 6400 6950
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5CD04DBF
+P 7800 1250
+F 0 "TP1" H 7858 1324 50  0000 L CNN
+F 1 "TestPoint" H 7858 1279 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 8000 1250 50  0001 C CNN
+F 3 "~" H 8000 1250 50  0001 C CNN
+	1    7800 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5CD04EBB
+P 7800 1450
+F 0 "TP2" H 7858 1524 50  0000 L CNN
+F 1 "TestPoint" H 7858 1479 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 8000 1450 50  0001 C CNN
+F 3 "~" H 8000 1450 50  0001 C CNN
+	1    7800 1450
+	1    0    0    -1  
+$EndComp
+Text Label 7800 1250 2    50   ~ 0
+HIN
+Text Label 7800 1450 2    50   ~ 0
+LIN
+$Comp
+L Connector:TestPoint TP13
+U 1 1 5CD1A673
+P 2100 6150
+F 0 "TP13" H 2158 6224 50  0000 L CNN
+F 1 "TestPoint" H 2158 6179 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 2300 6150 50  0001 C CNN
+F 3 "~" H 2300 6150 50  0001 C CNN
+	1    2100 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP14
+U 1 1 5CD1AB6F
+P 2100 7050
+F 0 "TP14" H 2158 7124 50  0000 L CNN
+F 1 "TestPoint" H 2158 7079 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 2300 7050 50  0001 C CNN
+F 3 "~" H 2300 7050 50  0001 C CNN
+	1    2100 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 7050 2100 7050
+Wire Wire Line
+	1950 6150 2100 6150
+$Comp
+L Connector:TestPoint TP15
+U 1 1 5CD2ABB5
+P 9850 6150
+F 0 "TP15" H 9908 6224 50  0000 L CNN
+F 1 "TestPoint" H 9908 6179 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 10050 6150 50  0001 C CNN
+F 3 "~" H 10050 6150 50  0001 C CNN
+	1    9850 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR059
+U 1 1 5CD2ACB9
+P 9850 6150
+F 0 "#PWR059" H 9850 5900 50  0001 C CNN
+F 1 "GND" H 9855 5977 50  0000 C CNN
+F 2 "" H 9850 6150 50  0001 C CNN
+F 3 "" H 9850 6150 50  0001 C CNN
+	1    9850 6150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 1600 5750 1600
 $EndSCHEMATC

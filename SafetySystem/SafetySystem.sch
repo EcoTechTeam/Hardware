@@ -838,7 +838,7 @@ F 3 "" H 4000 3700 50  0001 C CNN
 	1    4000 3700
 	1    0    0    -1  
 $EndComp
-Text Label 3750 2900 0    50   ~ 0
+Text Label 3900 2900 0    50   ~ 0
 SFT_SIG
 $Comp
 L Device:R R9
@@ -1355,7 +1355,7 @@ $Comp
 L Device:R R22
 U 1 1 5C80277D
 P 4550 6300
-F 0 "R22" V 4650 6200 50  0000 L CNN
+F 0 "R22" V 4650 6150 50  0000 L CNN
 F 1 "2k" V 4650 6350 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4480 6300 50  0001 C CNN
 F 3 "~" H 4550 6300 50  0001 C CNN
@@ -1366,7 +1366,7 @@ $Comp
 L Device:D_ALT D12
 U 1 1 5C802784
 P 4700 6450
-F 0 "D12" V 4700 6600 50  0000 R CNN
+F 0 "D12" V 4700 6650 50  0000 R CNN
 F 1 "D_ALT" V 4745 6529 50  0001 L CNN
 F 2 "Diode_SMD:D_MiniMELF" H 4700 6450 50  0001 C CNN
 F 3 "~" H 4700 6450 50  0001 C CNN
@@ -1395,7 +1395,7 @@ $Comp
 L Device:D_ALT D14
 U 1 1 5C8027A5
 P 6000 6750
-F 0 "D14" V 6000 6900 50  0000 R CNN
+F 0 "D14" V 6000 6950 50  0000 R CNN
 F 1 "D_ALT" V 6045 6829 50  0001 L CNN
 F 2 "Diode_SMD:D_MiniMELF" H 6000 6750 50  0001 C CNN
 F 3 "~" H 6000 6750 50  0001 C CNN
@@ -1429,7 +1429,7 @@ $Comp
 L Device:D_ALT D10
 U 1 1 5C8027B9
 P 6000 6150
-F 0 "D10" V 6000 6300 50  0000 R CNN
+F 0 "D10" V 6000 6350 50  0000 R CNN
 F 1 "D_ALT" V 6045 6229 50  0001 L CNN
 F 2 "Diode_SMD:D_MiniMELF" H 6000 6150 50  0001 C CNN
 F 3 "~" H 6000 6150 50  0001 C CNN
@@ -2001,6 +2001,92 @@ F 1 "MountingHole" H 10800 1055 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 10700 1100 50  0001 C CNN
 F 3 "~" H 10700 1100 50  0001 C CNN
 	1    10700 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5CCB813C
+P 3650 2900
+F 0 "TP5" H 3708 2974 50  0000 L CNN
+F 1 "TestPoint" H 3708 2929 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 3850 2900 50  0001 C CNN
+F 3 "~" H 3850 2900 50  0001 C CNN
+	1    3650 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5CCB863E
+P 3050 1100
+F 0 "TP1" H 3108 1174 50  0000 L CNN
+F 1 "TestPoint" H 3108 1129 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 3250 1100 50  0001 C CNN
+F 3 "~" H 3250 1100 50  0001 C CNN
+	1    3050 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5CCBC1A4
+P 3050 1700
+F 0 "TP3" H 3108 1774 50  0000 L CNN
+F 1 "TestPoint" H 3108 1729 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 3250 1700 50  0001 C CNN
+F 3 "~" H 3250 1700 50  0001 C CNN
+	1    3050 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5CCC124E
+P 10750 2250
+F 0 "TP4" H 10808 2324 50  0000 L CNN
+F 1 "TestPoint" H 10808 2279 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 10950 2250 50  0001 C CNN
+F 3 "~" H 10950 2250 50  0001 C CNN
+	1    10750 2250
+	1    0    0    -1  
+$EndComp
+Text Label 10750 2250 2    50   ~ 0
+ADC
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5CCC1946
+P 6600 1100
+F 0 "TP2" H 6658 1174 50  0000 L CNN
+F 1 "TestPoint" H 6658 1129 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 6800 1100 50  0001 C CNN
+F 3 "~" H 6800 1100 50  0001 C CNN
+	1    6600 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 1100 6400 1100
+Wire Wire Line
+	3050 1100 2600 1100
+Wire Wire Line
+	3050 1700 2600 1700
+Connection ~ 2600 1700
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5CCD1351
+P 5400 6500
+F 0 "TP6" H 5400 6700 50  0000 L CNN
+F 1 "TestPoint" H 5458 6529 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 5600 6500 50  0001 C CNN
+F 3 "~" H 5600 6500 50  0001 C CNN
+	1    5400 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5CCD51E7
+P 2100 6500
+F 0 "TP7" H 2150 6700 50  0000 L CNN
+F 1 "TestPoint" H 2158 6529 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 2300 6500 50  0001 C CNN
+F 3 "~" H 2300 6500 50  0001 C CNN
+	1    2100 6500
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

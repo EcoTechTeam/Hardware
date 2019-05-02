@@ -726,12 +726,12 @@ $EndComp
 $Comp
 L power:+12V #PWR011
 U 1 1 5CAFF922
-P 2450 1800
-F 0 "#PWR011" H 2450 1650 50  0001 C CNN
-F 1 "+12V" H 2465 1973 50  0000 C CNN
-F 2 "" H 2450 1800 50  0001 C CNN
-F 3 "" H 2450 1800 50  0001 C CNN
-	1    2450 1800
+P 2550 1800
+F 0 "#PWR011" H 2550 1650 50  0001 C CNN
+F 1 "+12V" H 2565 1973 50  0000 C CNN
+F 2 "" H 2550 1800 50  0001 C CNN
+F 3 "" H 2550 1800 50  0001 C CNN
+	1    2550 1800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -745,8 +745,6 @@ F 3 "" H 2000 2100 50  0001 C CNN
 	1    2000 2100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1650 1800 2000 1800
 Connection ~ 2000 1800
 $Comp
 L Connector:8P8C J3
@@ -942,8 +940,6 @@ F 3 "" H 3000 1700 50  0001 C CNN
 	1    3000 1700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2000 1800 2450 1800
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5CC8BA42
@@ -997,6 +993,83 @@ F 1 "EcoTechLogo" H 9925 1150 50  0000 L CNN
 F 2 "Footprints:EcoTech" H 9900 1150 50  0001 C CNN
 F 3 "" H 9900 1150 50  0001 C CNN
 	1    9900 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5CC613D1
+P 2800 3100
+F 0 "TP4" H 2858 3174 50  0000 L CNN
+F 1 "TestPoint" H 2858 3129 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 3000 3100 50  0001 C CNN
+F 3 "~" H 3000 3100 50  0001 C CNN
+	1    2800 3100
+	1    0    0    -1  
+$EndComp
+Text Label 2800 3100 2    50   ~ 0
+B
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5CC615AE
+P 3050 3100
+F 0 "TP5" H 3108 3174 50  0000 L CNN
+F 1 "TestPoint" H 3108 3129 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 3250 3100 50  0001 C CNN
+F 3 "~" H 3250 3100 50  0001 C CNN
+	1    3050 3100
+	1    0    0    -1  
+$EndComp
+Text Label 3050 3100 2    50   ~ 0
+A
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5CC624FB
+P 2550 1800
+F 0 "TP3" H 2492 1873 50  0000 R CNN
+F 1 "TestPoint" H 2608 1829 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 2750 1800 50  0001 C CNN
+F 3 "~" H 2750 1800 50  0001 C CNN
+	1    2550 1800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2000 1800 2550 1800
+Wire Wire Line
+	1650 1800 2000 1800
+Connection ~ 2550 1800
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5CC6449E
+P 6300 1100
+F 0 "TP2" H 6358 1174 50  0000 L CNN
+F 1 "TestPoint" H 6358 1129 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 6500 1100 50  0001 C CNN
+F 3 "~" H 6500 1100 50  0001 C CNN
+	1    6300 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 1100 6300 1100
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5CC6563D
+P 1100 950
+F 0 "TP1" H 1158 1024 50  0000 L CNN
+F 1 "TestPoint" H 1158 979 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 1300 950 50  0001 C CNN
+F 3 "~" H 1300 950 50  0001 C CNN
+	1    1100 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR030
+U 1 1 5CC65A40
+P 1100 950
+F 0 "#PWR030" H 1100 700 50  0001 C CNN
+F 1 "GND" H 1105 777 50  0000 C CNN
+F 2 "" H 1100 950 50  0001 C CNN
+F 3 "" H 1100 950 50  0001 C CNN
+	1    1100 950 
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

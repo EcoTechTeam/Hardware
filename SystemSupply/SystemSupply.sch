@@ -745,8 +745,8 @@ $Comp
 L Device:CP C4
 U 1 1 5C792763
 P 4900 3400
-F 0 "C4" H 5018 3446 50  0000 L CNN
-F 1 "180u" H 5018 3355 50  0000 L CNN
+F 0 "C4" H 5050 3500 50  0000 L CNN
+F 1 "180u" H 4650 3300 50  0000 L CNN
 F 2 "Footprints:C_Radial_D6.3mm_H11.0mm_P2.50mm" H 4938 3250 50  0001 C CNN
 F 3 "~" H 4900 3400 50  0001 C CNN
 F 4 "50V" H 4900 3400 50  0001 C CNN "Voltage"
@@ -1093,4 +1093,41 @@ F 3 "" H 6000 950 50  0001 C CNN
 	1    6000 950 
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5CCDEDD3
+P 2900 1350
+F 0 "TP1" H 2958 1424 50  0000 L CNN
+F 1 "TestPoint" H 2958 1379 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 3100 1350 50  0001 C CNN
+F 3 "~" H 3100 1350 50  0001 C CNN
+	1    2900 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5CCDF736
+P 5100 3100
+F 0 "TP5" H 5158 3174 50  0000 L CNN
+F 1 "TestPoint" H 5158 3129 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 5300 3100 50  0001 C CNN
+F 3 "~" H 5300 3100 50  0001 C CNN
+	1    5100 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5CCDF819
+P 5100 3550
+F 0 "TP6" H 5158 3624 50  0000 L CNN
+F 1 "TestPoint" H 5158 3579 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 5300 3550 50  0001 C CNN
+F 3 "~" H 5300 3550 50  0001 C CNN
+	1    5100 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3550 4900 3550
+Wire Wire Line
+	5100 3100 4900 3100
 $EndSCHEMATC
