@@ -1,4 +1,4 @@
-(module TerminalBlock_DG250_02P (layer F.Cu) (tedit 5C9E8ADB)
+(module TerminalBlock_DG250_02P (layer F.Cu) (tedit 5CCF49B0)
   (descr "Terminal Block 4Ucon ItemNo. 10693, vertical (cable from top), 2 pins, pitch 3.5mm, size 8x8.3mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.4uconnector.com/online/object/4udrawing/10693.pdf, script-generated with , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_4Ucon")
   (tags "THT Terminal Block 4Ucon ItemNo. 10693 vertical pitch 3.5mm size 8x8.3mm^2 drill 1.3mm pad 2.6mm")
   (fp_text reference J3 (at 1.8 -1.3) (layer F.SilkS)
@@ -24,9 +24,9 @@
   )
   (pad 2 thru_hole circle (at 5.25 9.7) (size 2.6 2.6) (drill 1.3) (layers *.Cu *.Mask))
   (pad 1 thru_hole rect (at 1.75 4.7) (size 2.6 2.6) (drill 1.3) (layers *.Cu *.Mask))
-  (model ${KISYS3DMOD}/TerminalBlock_4Ucon.3dshapes/TerminalBlock_4Ucon_1x02_P3.50mm_Vertical.wrl
-    (at (xyz 0 0 0))
+  (model ${ECO_LIB}/Footprints.pretty/TerminalBlock_DG250_02P.stp
+    (offset (xyz 1.75 -6 4.8))
     (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
+    (rotate (xyz 0 0 180))
   )
 )

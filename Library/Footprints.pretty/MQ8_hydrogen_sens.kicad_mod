@@ -1,4 +1,4 @@
-(module MQ8_hydrogen_sens (layer F.Cu) (tedit 5CC21585)
+(module MQ8_hydrogen_sens (layer F.Cu) (tedit 5CCF51F0)
   (fp_text reference U2 (at 0 -11.75) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -17,4 +17,9 @@
   (pad 1 thru_hole circle (at -3.35 3.35 225) (size 2.4 2.4) (drill 1.2) (layers *.Cu *.Mask))
   (pad 3 thru_hole circle (at 3.35 3.35 315) (size 2.4 2.4) (drill 1.2) (layers *.Cu *.Mask))
   (pad 4 thru_hole circle (at 4.75 0) (size 2.4 2.4) (drill 1.2) (layers *.Cu *.Mask))
+  (model ${ECO_LIB}/Footprints.pretty/MQ8_hydrogen_sens.step
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 90))
+  )
 )

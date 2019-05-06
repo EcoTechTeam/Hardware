@@ -1,4 +1,4 @@
-(module Fuse_Blade_90 (layer F.Cu) (tedit 5C9E8B85)
+(module Fuse_Blade_90 (layer F.Cu) (tedit 5CCF5CB7)
   (fp_text reference F1 (at 0 -0.508 90) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -21,4 +21,14 @@
   (pad 1 thru_hole oval (at -4.572 5.08) (size 4.7 2) (drill oval 1.7 0.6) (layers *.Cu *.Mask))
   (pad 2 thru_hole oval (at 4.572 -5.08) (size 4.75 2) (drill oval 2.64 0.6) (layers *.Cu *.Mask))
   (pad 2 thru_hole oval (at 4.572 5.08) (size 4.7 2) (drill oval 1.7 0.6) (layers *.Cu *.Mask))
+  (model ${ECO_LIB}/Footprints.pretty/Fuse_Blade_90.step
+    (offset (xyz 2 -5 -3.7))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 0))
+  )
+  (model ${ECO_LIB}/Footprints.pretty/Fuse_Blade_90.step
+    (offset (xyz -7.2 -5 -3.7))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 0))
+  )
 )

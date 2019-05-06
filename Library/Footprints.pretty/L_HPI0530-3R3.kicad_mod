@@ -1,4 +1,4 @@
-(module L_HPI0530-3R3 (layer F.Cu) (tedit 5C9F689E)
+(module L_HPI0530-3R3 (layer F.Cu) (tedit 5CCF512B)
   (descr "Neosid, Inductor, SMs42, Festinduktivitaet, SMD, magneticaly shielded,")
   (tags "Neosid Inductor SMs42 Festinduktivitaet SMD magneticaly shielded")
   (attr smd)
@@ -31,5 +31,10 @@
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
+  )
+  (model ${ECO_LIB}/Footprints.pretty/L_HPI0530-3R3.step
+    (offset (xyz 2.45 -2.45 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 0))
   )
 )

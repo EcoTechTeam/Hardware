@@ -1,4 +1,4 @@
-(module R30N (layer F.Cu) (tedit 5CA25281)
+(module R30N (layer F.Cu) (tedit 5CD077C9)
   (tags "R30N, Relay")
   (fp_text reference REF** (at -9 20) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -26,4 +26,9 @@
   (pad A1 thru_hole circle (at 5.2 11.4) (size 2.2 2.2) (drill 1.1) (layers *.Cu *.Mask))
   (pad 11 thru_hole circle (at -8.8 -1.46) (size 4.2 4.2) (drill 2.1) (layers *.Cu *.Mask))
   (pad 14 thru_hole circle (at 9 -4) (size 4.2 4.2) (drill 2.1) (layers *.Cu *.Mask))
+  (model ${ECO_LIB}/Footprints.pretty/R30N.stp
+    (offset (xyz 48.5 14.5 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 174))
+  )
 )

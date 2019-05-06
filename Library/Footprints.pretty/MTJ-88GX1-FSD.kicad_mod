@@ -1,4 +1,4 @@
-(module MTJ-88GX1-FSD (layer F.Cu) (tedit 5CB3045A)
+(module MTJ-88GX1-FSD (layer F.Cu) (tedit 5CCF69B3)
   (fp_text reference REF** (at -6.858 -11.176) (layer F.SilkS)
     (effects (font (size 0.5 0.5) (thickness 0.1)))
   )
@@ -25,4 +25,9 @@
   (pad "" np_thru_hole circle (at -5.715 0) (size 3.25 3.25) (drill 3.25) (layers *.Cu *.Mask))
   (pad 0 thru_hole circle (at 7.493 -3.048) (size 3.2 3.2) (drill 1.6) (layers *.Cu *.Mask))
   (pad 0 thru_hole circle (at -7.493 -3.048) (size 3.2 3.2) (drill 1.6) (layers *.Cu *.Mask))
+  (model ${ECO_LIB}/Footprints.pretty/MTJ-88GX1-FSD.step
+    (offset (xyz 0 1.2 5))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 0))
+  )
 )
