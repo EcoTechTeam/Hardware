@@ -4090,7 +4090,7 @@
     )
   )
 
-  (gr_text "MotorDriver\nv1.1" (at 152 80.5) (layer F.SilkS)
+  (gr_text "MotorDriver\nv1.0" (at 152 80.5) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.2)))
   )
   (gr_text TEST (at 150.75 121) (layer F.SilkS) (tstamp 5CB3CD91)

@@ -4111,7 +4111,7 @@
     )
   )
 
-  (gr_text "SafetySystem\nv1.1" (at 211.8 60.1) (layer F.SilkS)
+  (gr_text "SafetySystem\nv1.0" (at 211.8 60.1) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.2)))
   )
   (gr_text INV (at 188.6 74 90) (layer F.SilkS) (tstamp 5CC225B8)

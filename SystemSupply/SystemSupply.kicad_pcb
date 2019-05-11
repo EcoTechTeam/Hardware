@@ -2161,7 +2161,7 @@
     )
   )
 
-  (gr_text "SystemSupply\nv1.1" (at 99 162) (layer F.SilkS)
+  (gr_text "SystemSupply\nv1.0" (at 99 162) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.2)))
   )
   (gr_text + (at 72 130.7) (layer F.SilkS) (tstamp 5CF6558B)

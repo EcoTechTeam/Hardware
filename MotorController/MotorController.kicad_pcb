@@ -2056,7 +2056,7 @@
     )
   )
 
-  (gr_text "MotorController\nv1.1" (at 127 90.3 90) (layer F.SilkS)
+  (gr_text "MotorController\nv1.0\n" (at 127 90.3 90) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.2)))
   )
   (gr_text SEM (at 88.1 97.2) (layer F.SilkS)

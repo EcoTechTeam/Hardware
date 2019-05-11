@@ -2264,7 +2264,7 @@
     )
   )
 
-  (gr_text "SafetySupply v1.1" (at 143.1 109.2 90) (layer F.SilkS)
+  (gr_text "SafetySupply v1.0" (at 143.1 109.2 90) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.2)))
   )
   (gr_text SEM (at 143.2 99.3 90) (layer F.SilkS)
