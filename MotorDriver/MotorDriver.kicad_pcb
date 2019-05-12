@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew 5.0.2-bee76a0~70~ubuntu18.04.1)
+(kicad_pcb (version 20171130) (host pcbnew "(5.0.2)-1")
 
   (general
     (thickness 1.6)
@@ -17,7 +17,7 @@
     (33 F.Adhes user hide)
     (34 B.Paste user hide)
     (35 F.Paste user hide)
-    (36 B.SilkS user hide)
+    (36 B.SilkS user)
     (37 F.SilkS user)
     (38 B.Mask user)
     (39 F.Mask user)
@@ -93,7 +93,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory "E:/studia/Kolo/Hardware/MotorDriver/Output/"))
   )
 
   (net 0 "")
@@ -4902,7 +4902,7 @@
   (segment (start 167.85 119.45) (end 167.85 115.15) (width 0.2) (layer B.Cu) (net 72))
   (segment (start 167.85 115.15) (end 167.403599 114.703599) (width 0.2) (layer B.Cu) (net 72))
 
-  (zone (net 7) (net_name GND) (layer F.Cu) (tstamp 5CD757F4) (hatch edge 0.508)
+  (zone (net 7) (net_name GND) (layer F.Cu) (tstamp 5CD841D2) (hatch edge 0.508)
     (connect_pads (clearance 0.2))
     (min_thickness 0.2)
     (fill yes (arc_segments 16) (thermal_gap 0.2) (thermal_bridge_width 0.4))
@@ -5784,7 +5784,7 @@
       )
     )
   )
-  (zone (net 7) (net_name GND) (layer B.Cu) (tstamp 5CD757F1) (hatch edge 0.508)
+  (zone (net 7) (net_name GND) (layer B.Cu) (tstamp 5CD841CF) (hatch edge 0.508)
     (connect_pads (clearance 0.25))
     (min_thickness 0.25)
     (fill yes (arc_segments 16) (thermal_gap 0.3) (thermal_bridge_width 0.4))
