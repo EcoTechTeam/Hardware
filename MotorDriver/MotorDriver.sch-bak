@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:MotorDriver-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -1080,14 +1079,14 @@ Text Label 4500 6550 0    50   ~ 0
 RX
 Wire Wire Line
 	4500 6550 4750 6550
-Text Label 6100 6650 0    50   ~ 0
+Text Label 4700 5550 2    50   ~ 0
 ADC_VIN
 Wire Wire Line
-	6100 6650 6050 6650
-Text Label 6100 6550 0    50   ~ 0
+	4700 5550 4750 5550
+Text Label 4700 5450 2    50   ~ 0
 ADC_I
 Wire Wire Line
-	6100 6550 6050 6550
+	4700 5450 4750 5450
 $Comp
 L Switch:SW_Push SW3
 U 1 1 5CAF1DCA
@@ -1621,8 +1620,8 @@ $Comp
 L Device:R R17
 U 1 1 5CB84565
 P 4550 5650
-F 0 "R17" V 4450 5500 50  0000 C CNN
-F 1 "100k" V 4450 5700 50  0000 C CNN
+F 0 "R17" V 4500 5550 50  0000 R CNN
+F 1 "100k" V 4700 5650 50  0000 C BNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4480 5650 50  0001 C CNN
 F 3 "~" H 4550 5650 50  0001 C CNN
 	1    4550 5650
