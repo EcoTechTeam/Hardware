@@ -93,7 +93,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "E:/studia/Kolo/Hardware/MotorDriver/Output/"))
+      (outputdirectory "output/"))
   )
 
   (net 0 "")
@@ -4917,7 +4917,7 @@
   (segment (start 167.85 119.45) (end 167.85 115.15) (width 0.2) (layer B.Cu) (net 70))
   (segment (start 167.85 115.15) (end 167.403599 114.703599) (width 0.2) (layer B.Cu) (net 70))
 
-  (zone (net 7) (net_name GND) (layer F.Cu) (tstamp 5E03D84E) (hatch edge 0.508)
+  (zone (net 7) (net_name GND) (layer F.Cu) (tstamp 5E6A1409) (hatch edge 0.508)
     (connect_pads (clearance 0.2))
     (min_thickness 0.2)
     (fill yes (arc_segments 16) (thermal_gap 0.2) (thermal_bridge_width 0.4))
@@ -6265,7 +6265,7 @@
       )
     )
   )
-  (zone (net 7) (net_name GND) (layer B.Cu) (tstamp 5E03D84B) (hatch edge 0.508)
+  (zone (net 7) (net_name GND) (layer B.Cu) (tstamp 5E6A1406) (hatch edge 0.508)
     (connect_pads (clearance 0.25))
     (min_thickness 0.25)
     (fill yes (arc_segments 16) (thermal_gap 0.3) (thermal_bridge_width 0.4))
