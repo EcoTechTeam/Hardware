@@ -1528,12 +1528,14 @@ $EndComp
 $Comp
 L Graphic:Logo_Open_Hardware_Large G1
 U 1 1 5E70196B
-P 9650 1350
-F 0 "G1" H 9650 1958 50  0001 C CNN
-F 1 "EchoTech Team" H 9650 1866 50  0000 C CNN
-F 2 "Footprints:EcoTech" H 9650 1866 50  0001 C CNN
-F 3 "~" H 9650 1350 50  0001 C CNN
-	1    9650 1350
+P 9400 1350
+F 0 "G1" H 9400 1958 50  0001 C CNN
+F 1 "EchoTech Team" H 9400 1866 50  0000 C CNN
+F 2 "Footprints:EcoTech" H 9400 1866 50  0001 C CNN
+F 3 "~" H 9400 1350 50  0001 C CNN
+	1    9400 1350
 	1    0    0    -1  
 $EndComp
+Text Notes 9150 1800 0    50   ~ 0
+Telemetry v1.0
 $EndSCHEMATC
