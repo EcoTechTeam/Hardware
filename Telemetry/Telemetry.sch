@@ -1551,4 +1551,64 @@ Wire Wire Line
 	6600 1050 6600 1250
 Wire Wire Line
 	6600 1550 6600 1750
+$Comp
+L Connector:TestPoint TP16
+U 1 1 5ED5D9CB
+P 7550 2700
+F 0 "TP16" H 7608 2774 50  0000 L CNN
+F 1 "TestPoint" H 7608 2729 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 7750 2700 50  0001 C CNN
+F 3 "~" H 7750 2700 50  0001 C CNN
+	1    7550 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP17
+U 1 1 5ED61DF2
+P 7850 2700
+F 0 "TP17" H 7908 2774 50  0000 L CNN
+F 1 "TestPoint" H 7908 2729 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 8050 2700 50  0001 C CNN
+F 3 "~" H 8050 2700 50  0001 C CNN
+	1    7850 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP18
+U 1 1 5ED66264
+P 8200 2700
+F 0 "TP18" H 8258 2774 50  0000 L CNN
+F 1 "TestPoint" H 8258 2729 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 8400 2700 50  0001 C CNN
+F 3 "~" H 8400 2700 50  0001 C CNN
+	1    8200 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP19
+U 1 1 5ED6A81D
+P 8500 2700
+F 0 "TP19" H 8558 2774 50  0000 L CNN
+F 1 "TestPoint" H 8558 2729 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 8700 2700 50  0001 C CNN
+F 3 "~" H 8700 2700 50  0001 C CNN
+	1    8500 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 2700 7450 2700
+Wire Wire Line
+	7850 2700 7750 2700
+Wire Wire Line
+	8200 2700 8100 2700
+Wire Wire Line
+	8500 2700 8400 2700
+Text Label 7450 2700 3    50   ~ 0
+CS
+Text Label 7750 2700 3    50   ~ 0
+MOSI
+Text Label 8100 2700 3    50   ~ 0
+SCK
+Text Label 8400 2700 3    50   ~ 0
+MISO
 $EndSCHEMATC
